@@ -12,7 +12,9 @@
 10. bundle exec rake spec # Run the tests located in the spec/ directory, just to see what they're about and how they fail(/pass).
 
   If you're getting started creating a new database, or if you're changing an existing database, create a new empty migration.
+  
 11. bundle exec rake generate:migration NAME=<a snake case name that describes this migration, e.g. create_dogs, dog_rename_column_person_owner>
+
 12. Open up the newly-created empty migration file and fill in the #change method with whatever it is you want to create/change
 
 Create/Update the database from the migrations (i.e. migrate)
