@@ -45,20 +45,13 @@ Rake Options:
 
 $ bundle exec rake -T  
 rake console             # Start IRB with application environment loaded  
-rake db:create           # Create the database
-rake db:drop             # Drop the database
-rake db:migrate          # Migrate the database
-rake db:rollback         # rollback your migration--use STEP=number to step back multiple times
-rake db:seed             # populate the database with sample data
-rake db:version          # Returns the current schema version number
-rake generate:migration  # Create an empty migration in db/migrate, e.g., rake generate:migration NAME=create_tasks
-rake generate:model      # Create an empty model in app/models, e.g., rake generate:model NAME=User
-rake generate:spec       # Create an empty model spec in spec, e.g., rake generate:spec NAME=user
-rake spec                # Run the spec suite
-
-Here's a line for us to start with.
-
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
-
-This line is also a separate paragraph, but...
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+rake db:create           # Create the database  
+rake db:drop             # Drop the database  
+rake db:migrate          # Migrate the database  
+rake db:rollback         # rollback your migration--use STEP=number to step back multiple times  
+rake db:seed             # populate the database with sample data  
+rake db:version          # Returns the current schema version number  
+rake generate:migration  # Create an empty migration in db/migrate, e.g., rake generate:migration NAME=create_tasks  
+rake generate:model      # Create an empty model in app/models, e.g., rake generate:model NAME=User  
+rake generate:spec       # Create an empty model spec in spec, e.g., rake generate:spec NAME=user  
+rake spec                # Run the spec suite  
