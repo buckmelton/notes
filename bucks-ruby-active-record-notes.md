@@ -21,6 +21,18 @@ Create/Update the database from the migrations (i.e. migrate)
 Seed the database using whatever seed code you put into db/seeds.rb (maybe you used a CSV importer, or maybe you made explicit SQL statements).
 14. bundle exec rake db:seed
 
+Create the empty model
+15. bundle exec rake generate:model
+
+Fill in empty model with associations (e.g. belongs_to, has_many) and validations (validates)
+Associations: http://guides.rubyonrails.org/association_basics.html
+Validations: http://guides.rubyonrails.org/active_record_validations.html
+
+16. You can now query!
+http://guides.rubyonrails.org/active_record_querying.html
+
+
+
 
 Rake Options:
 
