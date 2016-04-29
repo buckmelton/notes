@@ -31,7 +31,7 @@
 
 16. Fill in empty model with associations (e.g. belongs_to, has_many) and validations (validates)
 
-  Associations: http://guides.rubyonrails.org/association_basics.html
+  Associations: http://guides.rubyonrails.org/association_basics.html  
   Validations: http://guides.rubyonrails.org/active_record_validations.html
 
 17. You can now query!
