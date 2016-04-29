@@ -11,27 +11,32 @@
 9. bundle exec db:create # Create two empty database files in the db/ directory, named database.sqlite3 and test-database.sqlite3, if they don't exist
 10. bundle exec rake spec # Run the tests located in the spec/ directory, just to see what they're about and how they fail(/pass).
 
-  If you're getting started creating a new database, or if you're changing an existing database, create a new empty migration.
+11. If you're getting started creating a new database, or if you're changing an existing database, create a new empty migration.
   
-11. bundle exec rake generate:migration NAME=<a snake case name that describes this migration, e.g. create_dogs, dog_rename_column_person_owner>
+  bundle exec rake generate:migration NAME=<a snake case name that describes this migration, e.g. create_dogs, dog_rename_column_person_owner>
 
 12. Open up the newly-created empty migration file and fill in the #change method with whatever it is you want to create/change
 
-Create/Update the database from the migrations (i.e. migrate)
-13. bundle exec rake db:migrate
+13. Create/Update the database from the migrations (i.e. migrate)
 
-Seed the database using whatever seed code you put into db/seeds.rb (maybe you used a CSV importer, or maybe you made explicit SQL statements).
-14. bundle exec rake db:seed
+  bundle exec rake db:migrate
 
-Create the empty model
-15. bundle exec rake generate:model
+14. Seed the database using whatever seed code you put into db/seeds.rb (maybe you used a CSV importer, or maybe you made explicit SQL statements).
 
-Fill in empty model with associations (e.g. belongs_to, has_many) and validations (validates)
-Associations: http://guides.rubyonrails.org/association_basics.html
-Validations: http://guides.rubyonrails.org/active_record_validations.html
+  bundle exec rake db:seed
 
-16. You can now query!
-http://guides.rubyonrails.org/active_record_querying.html
+15. Create the empty model
+
+  bundle exec rake generate:model
+
+16. Fill in empty model with associations (e.g. belongs_to, has_many) and validations (validates)
+
+  Associations: http://guides.rubyonrails.org/association_basics.html
+  Validations: http://guides.rubyonrails.org/active_record_validations.html
+
+17. You can now query!
+
+  http://guides.rubyonrails.org/active_record_querying.html
 
 
 
