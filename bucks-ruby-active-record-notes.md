@@ -9,7 +9,7 @@
 7. bundle install
 8. bundle exec rake -T (to refresh memory of the rake tasks I may be about to do)
 9. bundle exec db:create # Create two empty database files in the db/ directory, named database.sqlite3 and test-database.sqlite3, if they don't exist
-10. bundle exec rake spec # Run the tests located in the spec/ directory, just to see what they're about and how they fail(/pass).
+10. bundle exec rake spec # Run the tests located in the spec/ directory (if any), just to see what they're about and how they fail(/pass).
 
 11. If you're getting started creating a new database, or if you're changing an existing database, create a new empty migration.
   
