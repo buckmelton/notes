@@ -1,5 +1,7 @@
 ### Buck's Ruby ActiveRecord Notes
 
+#### Much of this extracted from https://github.com/sf-fiery-skippers-2016/active-record-intro-retrieving-records-challenge
+
 1. Go to GitHub and fork repository.
 2. Go to linux prompt, go to directory above where you want the repository to go.
 3. git clone <paste repository fork url>
