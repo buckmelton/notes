@@ -16,7 +16,10 @@ If you're getting started creating a new database, or if you're changing an exis
   12. Open up the newly-created empty migration file and fill in the #change method with whatever it is you want to create/change
 
 Create/Update the database from the migrations (i.e. migrate)
-13. bundle exec db:migrate
+13. bundle exec rake db:migrate
+
+Seed the database using whatever seed code you put into db/seeds.rb (maybe you used a CSV importer, or maybe you made explicit SQL statements).
+14. bundle exec rake db:seed
 
 
 Rake Options:
