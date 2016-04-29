@@ -40,6 +40,8 @@
 17. You can now query!
 
   http://guides.rubyonrails.org/active_record_querying.html
+  
+18. Also remember that ActiveRecord (by virtue of your class inheriting from ActiveRecord::Base) takes care of all getters and setters for all columns.
 
 
 
