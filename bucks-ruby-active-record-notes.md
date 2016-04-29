@@ -25,13 +25,9 @@ Seed the database using whatever seed code you put into db/seeds.rb (maybe you u
 Rake Options:
 
 $ bundle exec rake -T
-
 rake console             # Start IRB with application environment loaded
-
 rake db:create           # Create the database
-
 rake db:drop             # Drop the database
-
 rake db:migrate          # Migrate the database
 rake db:rollback         # rollback your migration--use STEP=number to step back multiple times
 rake db:seed             # populate the database with sample data
