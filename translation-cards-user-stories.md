@@ -2,8 +2,8 @@
 
 User Stories:
 
-  User can add a card.
-  User can list the cards.
+- User can add a card.
+- User can list the cards.
   User can delete a card.
   User can guess a card.
   User can guess cards that haven't been learned.
