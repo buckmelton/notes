@@ -1,5 +1,12 @@
 DevBootcamp Links & Resources
 
+Week ?
+
+  Sublime
+    Select the entire line then subsequent lines: Cmd-L
+    Move whatever you have selected up and down lines: Ctrl-Cmd-L
+    
+
 Week 13 - ActiveRecord, Sinatra, CRUD
 
   Process at DevBootcamp
