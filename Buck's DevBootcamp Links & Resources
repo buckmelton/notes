@@ -2,5 +2,22 @@ DevBootcamp Links & Resources
 
 Week 13 - ActiveRecord, Sinatra, CRUD
 
+  Process at DevBootcamp
+    If you're just re-setting up a db that had already been defined with migrations and seed
+      bundle install  # to install all needed gems as listed in Gemfile and Gemfile.lock
+      bundle exec rake db:create  # you can use 'be' instead of 'bundle exec'
+      be rake db:migrate
+      be rake db:seed
+      
+    be shotgun config.ru  # Start the sinatra server using shotgun re-loader
+
+  ActiveRecord
+    Advanced ActiveRecord Associations: http://www.theodinproject.com/ruby-on-rails/active-record-associations
+  
   Sinatra
     Sinatra - Classy web-development dressed in a DSL (official / canonical repo): https://github.com/sinatra/sinatra
+    
+  CRUD
+    /Restular - A Sinatra Routing Resource: http://www.restular.com/
+    
+  
