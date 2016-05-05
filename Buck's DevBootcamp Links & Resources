@@ -6,8 +6,12 @@ Week ?
     Select the entire line then subsequent lines: Cmd-L
     Move whatever you have selected up and down lines: Ctrl-Cmd-L
     
+  Mac
+    Screenshot (whole screen): Cmd-Shift-3
+    Screenshot (part of screen): Cmd-Shift-4
+    
 
-Week 13 - ActiveRecord, Sinatra, CRUD
+Week 13 - ActiveRecord, Sinatra, CRUD, RESTful Routes
 
   Process at DevBootcamp
     If you're just re-setting up a db that had already been defined with migrations and seed
@@ -25,7 +29,8 @@ Week 13 - ActiveRecord, Sinatra, CRUD
   Sinatra
     Sinatra - Classy web-development dressed in a DSL (official / canonical repo): https://github.com/sinatra/sinatra
     
-  CRUD
+  CRUD & RESTful Routes
     /Restular - A Sinatra Routing Resource: http://www.restular.com/
+    Annotated RESTful Route Example: https://github.com/sf-fiery-skippers-2016/phase-2-guide/blob/sf/resources/annotated_REST_routes_sample.rb
     
   
