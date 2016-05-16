@@ -49,3 +49,14 @@ Truthy and Falsy
 
     In the first case, it is truthy and _treated_as_if_ it were truth, and so "Found: do something" is executed.
     But it is not EQUAL TO true, so in the second case, "Not found: do something" is executed.
+
+Conditionals:
+
+  if (expr) {
+  
+  } else {
+
+  }
+
+  
+  switch
