@@ -105,6 +105,42 @@ Objects:
     
     delete hotel.booked;
       
+  Built-In Objects:
+    Three types:
+      * Browser Object Model
+      * Document Object Model (DOM)
+      * Global Javascript Objects
+    
+    Browser Object Model:
+      Window
+        Document (DOM)
+        History
+        Location
+        Navigator
+        Screen
+        
+        Example properties of Window:
+        window.innerHeight, window.innerWidth, window.document, window.history, window.history.length, window.screenX, window.screenY
+        
+        Example methods of Window:
+        window.alert(), window.open(), window.print()
+        
+    Document Object Model (DOM)
+      Example properties of window.document:
+        document.title, document.URL, document.lastModified, document.domain
+        
+      Example methods of window.document:
+        document.write(), document.getElementById(), document.querySelectAll(), document.createElement(), document.createTextNode()
+        
+    Global Objects:
+      String:
+        example property: length
+        example methods: toUpperCase(), toLowerCase(), charAt(), indexOf(), substring(), split(), trim(), replace()
+      Number:
+        example methods: isNaN(), toFixed(), toPrecision, toExponential()
+      Math:
+        example property: Math.PI
+      Date:
     
 
 Conditionals:
