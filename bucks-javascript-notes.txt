@@ -49,6 +49,63 @@ Truthy and Falsy
 
     In the first case, it is truthy and _treated_as_if_ it were truth, and so "Found: do something" is executed.
     But it is not EQUAL TO true, so in the second case, "Not found: do something" is executed.
+    
+Variables:
+
+  Variables declared without 'var' are considered _global_ variables, so don't accidently forget the 'var' in the declaration or it may very well cause unintended bugs and scope grief.
+  
+Objects:
+
+  Literal Notation:
+  
+    var hotel = {
+      name: 'Quay',
+      rooms: 40,
+      booked: 25,
+      checkAvailability: function() {
+        return this.rooms - this.booked;
+      }
+    };
+    
+    var hotel = {};
+    hotel.name = 'Quay';
+    hotel.rooms = 40;
+    hotel.booked = 25;
+    hotel.checkAvailability = function() {
+      return this.rooms - this.booked;
+    };
+    
+  Constructor Notation:
+  
+    var hotel = new Object();
+    hotel.name = 'Quay';
+    hotel.booked = 25;
+    hotel.checkAvailability = function() {
+      return this.rooms - this.booked;
+    };
+            
+    function Hotel(name, rooms, booked) {
+      this.name = name;
+      this.rooms = rooms;
+      this.booked = booked;
+      this.checkAvailability = function() {
+        return this.rooms - this.booked;
+      };
+    }
+    var quayHotel = new Hotel('Quay',40,25);
+    var parkHotel = new Hotel('Park',120,77);
+    
+  Adding and Removing (Deleting) Properties:
+  
+    To add, just presumptively assign:
+    
+    hotel.gym = true;
+    
+    To remove (delete) a property:
+    
+    delete hotel.booked;
+      
+    
 
 Conditionals:
 
@@ -60,3 +117,43 @@ Conditionals:
 
   
   switch
+  
+Functions:
+
+  Named Functions:
+  
+    function area(width, height) {
+      return width * height;
+    }
+    
+    var size = area(3,4);
+    
+    The interpreter always goes through the entire script looking for all variable and function declarations _before_ executing the script line-by-line.  So a function created as a named function can be called in the script _before_ it has been declared.
+    
+  Anonymous Functions / Function Expressions:
+  
+    If you put a function where the interpreter expects an expression, it's treated as an expression and is known as a _function_expression_. For a function expression, the name is usually omitted. A function with no name is an _anonymous_function_
+    
+    var area = function(width, height) {
+      return width * height;
+    };
+    
+    var size = area(3,4);
+    
+    In a function expression, the function isn't processed until the interpreter gets to that statement.  So you can't call an anonymous function before that interpreter has discovered it.  (This also means that any code that appears up to that point could potentially alter what happens inside this function.)
+    
+  IIFE ("Iffy" - Immediately-Invoked Function Expressions)
+  
+    Often used to ensure that variable names don't conflict with each other, especially on pages that use more than one script.
+    Used for code that only needs to run once in a task, rather than repeatedly called by other parts of the script.
+    Any variables declared within the anonymous IIFE function are effectively protected from name collisions.
+    
+    var area = (function() {
+      var width = 3;
+      var height = 2;
+      return width * height;
+    } () );
+    
+    The last pair of parens tell the interpreter to execute the function immediately. The outermost grouping parens are there to ensure the interpreter treats the whole thing as an expression.
+    
+    You may see the final pair of parens come after the outer grouping parens, but it's usually considered better practice to put them inside, as above.
