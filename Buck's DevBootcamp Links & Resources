@@ -2,6 +2,9 @@ DevBootcamp Links & Resources
 
 Week ?
 
+  All The Things
+    DBC Talks: https://talks.devbootcamp.com/
+
   Sublime
     Select the entire line then subsequent lines: Cmd-L
     Move whatever you have selected up and down lines: Ctrl-Cmd-L
@@ -14,7 +17,7 @@ Week ?
     https://github.com/sf-fiery-skippers-2016/phase-2-guide/blob/sf/resources/agile.md
     
 
-Week 13 - ActiveRecord, Sinatra, CRUD, RESTful Routes, Heroku
+Phase 2, Week 1 (Onsite Week 4, Overall Week 13) - ActiveRecord, Sinatra, CRUD, RESTful Routes, Heroku, BCrypt
 
   Process at DevBootcamp
     If you're just re-setting up a db that had already been defined with migrations and seed
@@ -38,4 +41,7 @@ Week 13 - ActiveRecord, Sinatra, CRUD, RESTful Routes, Heroku
     
   Heroku
     Getting Started with Ruby on Heroku: https://devcenter.heroku.com/articles/getting-started-with-ruby-o#prerequisites
+    
+  BCrypt
+    BCrypte: https://github.com/codahale/bcrypt-ruby/tree/master
   
