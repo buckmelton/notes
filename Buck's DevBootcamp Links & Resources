@@ -35,7 +35,7 @@ Phase 2, Week 1 (Onsite Week 4, Overall Week 13) - ActiveRecord, Sinatra, CRUD, 
     be shotgun config.ru  # Start the sinatra server using shotgun re-loader
 
   ActiveRecord
-    Advanced ActiveRecord Associations: http://www.theodinproject.com/ruby-on-rails/active-record-associations
+    ADVANCED ActiveRecord Associations: http://www.theodinproject.com/ruby-on-rails/active-record-associations
     ActiveRecord Query Interface: http://guides.rubyonrails.org/active_record_querying.html
   
   Sinatra
