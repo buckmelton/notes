@@ -4,6 +4,7 @@ Week ?
 
   All The Things
     DBC Talks: https://talks.devbootcamp.com/
+    Self-Assessments for Phase 2: https://github.com/sf-fiery-skippers-2016/phase-2-guide/tree/sf/self-assessments
 
   Sublime
     Select the entire line then subsequent lines: Cmd-L
@@ -15,6 +16,11 @@ Week ?
     
   Agile & Team Workflow
     https://github.com/sf-fiery-skippers-2016/phase-2-guide/blob/sf/resources/agile.md
+    Manifesto for Agile Software Development: http://agilemanifesto.org/
+    
+  Git
+    Git for Teams: https://gist.github.com/mikelikesbikes/ccbf4c7fd90e647138c6
+    Getting Started With Version Control: https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
     
 
 Phase 2, Week 1 (Onsite Week 4, Overall Week 13) - ActiveRecord, Sinatra, CRUD, RESTful Routes, Heroku, BCrypt
