@@ -26,7 +26,8 @@ Week ?
     Great Layout Drills (scroll down): https://github.com/sf-fiery-skippers-2016/phase-2-guide/tree/sf/week-4#weekend
     
 
-Phase 2, Week 1 (Onsite Week 4, Overall Week 13) - ActiveRecord, Sinatra, CRUD, RESTful Routes, Heroku, BCrypt
+Phase 2, Week 1 (Onsite Week 4, Overall Week 13)
+ActiveRecord, Sinatra, CRUD, RESTful Routes, Heroku, BCrypt
 
   Process at DevBootcamp
     If you're just re-setting up a db that had already been defined with migrations and seed
@@ -53,4 +54,17 @@ Phase 2, Week 1 (Onsite Week 4, Overall Week 13) - ActiveRecord, Sinatra, CRUD, 
     
   BCrypt
     BCrypte: https://github.com/codahale/bcrypt-ruby/tree/master
+    
+Phase 2, Week 2 (Onsite Week 5, Overall Week 14)
+Javascript, JQuery
+
+  JQuery
+    The Mystery of the JQuery Object: https://www.smashingmagazine.com/2014/05/mystery-jquery-object-syntax-basic-introduction/
+    Team Treehouse JavaScript Basics (372 minutes): https://teamtreehouse.com/library/javascript-basics
+    Addison-Wesley JavaScript Reference: http://wps.aw.com/wps/media/objects/2234/2287950/javascript_refererence.pdf
+    A Re-Introduction to JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+    Custom Objects and Prototypes: https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript#Custom_objects
+    Object Literals vs Constructors vs Prototypes: https://gist.github.com/alycit/e6f5f20ced9b42a64f5a
+    Basics of Object-Oriented JavaScript: http://code.tutsplus.com/tutorials/the-basics-of-object-oriented-javascript--net-7670
+    Understanding JavaScript Prototypes: https://javascriptweblog.wordpress.com/2010/06/07/understanding-javascript-prototypes/
   
