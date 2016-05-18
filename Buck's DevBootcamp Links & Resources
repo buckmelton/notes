@@ -56,9 +56,13 @@ ActiveRecord, Sinatra, CRUD, RESTful Routes, Heroku, BCrypt
     BCrypte: https://github.com/codahale/bcrypt-ruby/tree/master
     
 Phase 2, Week 2 (Onsite Week 5, Overall Week 14)
-Javascript, JQuery
+Javascript, JQuery, AJAX
+
+  JavaScript
+    Julian Bouma's JavaScript Notes: https://gist.github.com/b0uma/539de999627c97362faf
 
   JQuery
+    Julian Bouma's JQuery-DOM Notes: https://gist.github.com/b0uma/c23409048bc8c014887e
     The Mystery of the JQuery Object: https://www.smashingmagazine.com/2014/05/mystery-jquery-object-syntax-basic-introduction/
     Team Treehouse JavaScript Basics (372 minutes): https://teamtreehouse.com/library/javascript-basics
     Addison-Wesley JavaScript Reference: http://wps.aw.com/wps/media/objects/2234/2287950/javascript_refererence.pdf
@@ -67,4 +71,10 @@ Javascript, JQuery
     Object Literals vs Constructors vs Prototypes: https://gist.github.com/alycit/e6f5f20ced9b42a64f5a
     Basics of Object-Oriented JavaScript: http://code.tutsplus.com/tutorials/the-basics-of-object-oriented-javascript--net-7670
     Understanding JavaScript Prototypes: https://javascriptweblog.wordpress.com/2010/06/07/understanding-javascript-prototypes/
+    
+  AJAX
+    Julian Bouma's AJAX Notes: https://gist.github.com/b0uma/fb38a57588a9c0977e11
+    
+  Authentication & Authorization:
+    Julian Bouma's Auth Notes: https://gist.github.com/b0uma/3377bc2823d51c00cd20
   
