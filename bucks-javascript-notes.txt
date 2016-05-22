@@ -150,6 +150,11 @@ Objects:
           
       Date:
         example methods: getDate(), setDate(), getDay(), getFullYear(), getHours(), getTime(), getTimezoneOffset(), toDateString(), toTimeString(), toString()
+
+        var today = new Date(); // new Date() with no args returns current date & time
+        var dayWeMet = new Date('May 7, 2000 20:00:00');
+        var millisecsSinceMeeting = today - dayWeMet
+        var yearWeMet = dayWeMet.getFullYear();
     
 
 Conditionals:
