@@ -1,0 +1,43 @@
+Buck's Rails Notes
+
+Creating a new app:
+  >rails new APP_NAME --skip-spring --database=postgres --skip-test-unit
+
+  # according to lecturer, spring is more trouble than its worth
+  # rails uses sqlite by default, but we want postgres
+  # by default the javascript framework is jquery, but you could do e.g. --javascript=react
+  # skipping test-unit cuz we're using rspec
+
+When an app runs, sequentially:
+
+environment.rb
+  which loads boot.rb
+    which loads application.rb
+    application file runs and starts to configure the environment
+      runs one of the environment config files (e.g. development.rb, production.rb, test.rb)
+      then run all the initializers, then the app is up and running
+
+Routes:
+  When a request comes in, it goes to config/routes.rb
+
+  routes.rb starts with Rails.application.routes.draw do
+
+  get '/info' => 'static#info'
+  Here's the pattern to match on (/info), go to controller and action (controller 'static', action 'info')
+
+If you start server:
+  >be rails s
+
+  go to localhost, you will get database doesn't exist error
+
+Shut down server
+>be rake db:create db:migrate
+>be rails s
+Should get generic Rails home page
+Now try to go to our route
+localhost:3000/info
+You'll get uninitialized StaticController cuz we havent made the controller
+>be rails generate controller static info
+anything listed after controller name will be created as an action
+Now that controller is made, go to localhost:3000/info, you'll get missing view error
+Make views/static/info.html.erb
