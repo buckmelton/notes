@@ -5,7 +5,8 @@
 - Languages, Technologies, Frameworks
 - Tools
 - Education
--
+- What Else Do I Need?
+  - Portfolio Site / Personal Website
 - What's Most In Demand Currently
   - DICE
   -
