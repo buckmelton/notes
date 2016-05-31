@@ -1,0 +1,11 @@
+# Professional Front-End Design
+- Types of Front-End Design
+  - Common Job Titles
+- Tools
+- Education
+- What's Hot In Front-End Design? ("Buzzwords with Meaning")
+- What Else Do I Need?
+  - Portfolio Site / Personal Website
+- What's Most In Demand Currently
+  - According to DICE
+  - According to ?? <other job sites>
