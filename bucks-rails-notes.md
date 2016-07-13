@@ -8,10 +8,10 @@
 #### Creating a new app:
   >rails new APP_NAME --skip-spring --database=postgres --skip-test-unit
 
-  # according to lecturer, spring is more trouble than it's worth
-  # rails uses sqlite by default, but we want postgres
-  # by default the javascript framework is jquery, but you could do e.g. --javascript=react
-  # skipping test-unit cuz we're using rspec
+  - according to lecturer, spring is more trouble than it's worth
+  -  rails uses sqlite by default, but we want postgres
+  -  by default the javascript framework is jquery, but you could do e.g. --javascript=react
+  - skipping test-unit cuz we're using rspec
 
 #### When an app runs, what happens sequentially is:
 
