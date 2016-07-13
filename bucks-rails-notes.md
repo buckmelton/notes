@@ -1,6 +1,9 @@
 ## Buck's Rails Notes
 
 ### Theory
+- Rails has two guiding principles:
+  - Keep your code DRY (Don't Repeat Yourself)
+  - Convention Over Configuration
 
 
 ### Practice
