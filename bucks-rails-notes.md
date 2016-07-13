@@ -4,6 +4,7 @@
 - Rails has two guiding principles:
   - Keep your code DRY (Don't Repeat Yourself)
   - Convention Over Configuration
+- Keep re-reading RoR Getting Started guide to strengthen knowledge
 
 
 ### Practice
