@@ -15,12 +15,12 @@
 
 #### When an app runs, what happens sequentially is:
 
-environment.rb
-  which loads boot.rb
-    which loads application.rb
-    application file runs and starts to configure the environment
-      runs one of the environment config files (e.g. development.rb, production.rb, test.rb)
-      then run all the initializers, then the app is up and running
+- environment.rb
+  - which loads boot.rb
+    - which loads application.rb
+    - application file runs and starts to configure the environment
+      - runs one of the environment config files (e.g. development.rb, production.rb, test.rb)
+      - then run all the initializers, then the app is up and running
 
 #### Routes:
   When a request comes in, it goes to config/routes.rb
