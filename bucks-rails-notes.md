@@ -6,7 +6,7 @@
 ### Practice
 
 #### Creating a new app:
-  >>rails new APP_NAME --skip-spring --database=postgres --skip-test-unit
+  >\>rails new APP_NAME --skip-spring --database=postgres --skip-test-unit
 
   - according to lecturer, spring is more trouble than it's worth
   -  rails uses sqlite by default, but we want postgres
