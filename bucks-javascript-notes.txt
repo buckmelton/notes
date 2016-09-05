@@ -36,7 +36,7 @@ Truthy and Falsy
   Truthy values can also be treated as the number 1.
 
   IMPORTANT NOTE:
-    if (document.getElementById('header') {
+    if (document.getElementById('header')) {
       // Found: do something
     } else {
       // Not found: do something else
