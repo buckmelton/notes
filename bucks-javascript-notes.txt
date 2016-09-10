@@ -166,7 +166,21 @@ Conditionals:
   }
 
   
-  switch
+  switch (level) {
+    
+    case 'One':
+      title = 'Level 1';
+      break';
+
+    case 'Two':
+      title = 'Level 2';
+      break;
+
+    default:
+      title = 'Test';
+      break;
+
+  }
   
 Functions:
 
