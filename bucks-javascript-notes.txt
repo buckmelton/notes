@@ -11,6 +11,10 @@ Data Types
     - Object
       Arrays and Functions are of type Object
 
+Type Coercion and Weak Typing
+  JavaScript has weak typing and can convert data types behind the scenes to complete an operation.
+  If you use a data type that JavaScript did not expect, it tries to make sense of the operation rather than report an error.
+
 Truthy and Falsy
   Some things are treated _as_if_ they are false or true.
 
