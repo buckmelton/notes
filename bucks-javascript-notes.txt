@@ -67,6 +67,8 @@ Short Cicuit Values:
 
   artistA ends up with value 'Rembrandt' because processing stops at truthy 'Rembrandt'
 
+  Therefore, in logical operations, put the code most likely to return true first in OR operations or the code most likely to return false in AND operations, or the code requiring the most processing power last, just in case another preceding value stops the operation earlier and the processor-intensive operation doesn't need to be run.
+
 
 Variables:
 
