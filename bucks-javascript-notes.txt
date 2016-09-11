@@ -15,6 +15,9 @@ Type Coercion and Weak Typing
   JavaScript has weak typing and can convert data types behind the scenes to complete an operation.
   If you use a data type that JavaScript did not expect, it tries to make sense of the operation rather than report an error.
 
+=== and !==
+  When checking if two values are equal or not equal, because of automatic type conversion it is considered better to use strict equals operators === and !== as those will check that values and data types match, while == and != only check that values match.
+
 Truthy and Falsy
   Some things are treated _as_if_ they are false or true.
 
@@ -54,10 +57,22 @@ Truthy and Falsy
     In the first case, it is truthy and _treated_as_if_ it were truth, and so "Found: do something" is executed.
     But it is not EQUAL TO true, so in the second case, "Not found: do something" is executed.
     
+
+Short Cicuit Values:
+
+  Logical operators are processed left to right.  They short-circuit (stop) as soon as they have a result - but they return the value that stopped the processing (not necessarily true or false).
+
+  var artist = 'Rembrandt';
+  var artistA = (artist || 'Unknown');
+
+  artistA ends up with value 'Rembrandt' because processing stops at truthy 'Rembrandt'
+
+
 Variables:
 
   Variables declared without 'var' are considered _global_ variables, so don't accidently forget the 'var' in the declaration or it may very well cause unintended bugs and scope grief.
   
+
 Objects:
 
   Literal Notation:
