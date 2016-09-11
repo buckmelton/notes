@@ -75,6 +75,31 @@ Variables:
   Variables declared without 'var' are considered _global_ variables, so don't accidently forget the 'var' in the declaration or it may very well cause unintended bugs and scope grief.
   
 
+Loops:
+
+  for (var i = 0; i < 10; i++) {
+    document.write(i);
+  }
+
+  // Writes a 5 x table to web page.
+  var i = 0;
+  var msg = '';
+  while (i < 10) {
+    msg += i + ' x 5 = ' + (i * 5) + '<br />';
+    i++;
+  }
+  document.getElementById('answer').innerHTML = msg;
+
+  var i = 0;
+  do {
+    // do stuff
+    i++;
+  } while (i < 10)
+
+  break; // leave the loop
+  continue; // skip the rest of this iteration, go to next iteration of loop
+
+
 Objects:
 
   Literal Notation:
