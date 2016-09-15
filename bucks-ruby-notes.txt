@@ -9,3 +9,14 @@ Outputting for testing, debugging, diagnostics
   print is simplest: outputs string to console, returns nil
   puts is next simplest: outputs string to console with a newline, returns nil
   p gives the most info for debugging: it outputs results of call to inspect, and returns the evaluated code
+  
+Basic Syntax
+
+  Semicolons not needed (and it's typically considered good style not to use them)
+    Unless two statements are on the same line, then they need to be separated by a semicolon
+  
+  Variables
+  
+    Assignment
+      composer = 'Mozart'
+      composer_age = cur_year - composer_yob
