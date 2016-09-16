@@ -12,11 +12,23 @@ Outputting for testing, debugging, diagnostics
   
 Basic Syntax
 
-  Semicolons not needed (and it's typically considered good style not to use them)
-    Unless two statements are on the same line, then they need to be separated by a semicolon
+  Semicolons
+    Not needed (and it's typically considered good style not to use them),
+    unless two statements are on the same line, then they need to be separated by a semicolon
+    
+  Quotes
+    Single quotes and double quotes are the same except:
+    - Double quotes must be used if you're doing string interpolation: "Hello #{world_name}"
+    - Double quotes must be used when escaping characters: 'a\nb' evaluates to string a\nb; "a\nb" evaluates to a, newline, b
+      - Except that you can use single quotes to escape single quotes: 'you\'re'
   
   Variables
   
     Assignment
       composer = 'Mozart'
       composer_age = cur_year - composer_yob
+      
+Data Conversion
+
+  Integer to Float: two ways: Float(3); 3.to_f
+    I don't know why the 3.to_f works.  to_f is not a method on Integer or any of its ancestors, nor on the module Kernel.
