@@ -66,8 +66,8 @@ Basic Syntax
       input = gets.chomp
     end
     
-    break
-    next # like 'continue' in other languages
+    break   
+    next    # like 'continue' in other languages
     
   Data Structures
   
