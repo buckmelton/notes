@@ -104,13 +104,18 @@ Basic Syntax
       Create new hash
         my_hash = {}  # creates empty hash
         my_hash = Hash.new  # same, creates empty hash
-        currency_hash = { 'United States': 'dollar',
+        currencies_hash = { 'United States': 'dollar',
                           'Canada': 'dollar',
                           'Great Britain': 'pound',
                           'Brazil': 'real'
                         }
         
       Methods on Hash
+      
+        #each
+        currencies_hash.each do |country, currency|
+          puts "The currency of #{country} is the #{currency}"
+        end
         
       
   Methods
@@ -184,6 +189,10 @@ Objects
     
 Classes
 
+  Find the class of an object using the 'class' method
+  some_random_object = 'Buck'
+  some_random_object.class # returns 'String'
+
   String
   
     Methods
@@ -200,6 +209,17 @@ Classes
       ljust(line_width)
       rjust(line_width)
       
+      # Substrings
+      # The 8 characters starting with the 12th character
+      my_string[12, 8]
+      
+      # The 12th through the 19th character (same as above, but using a range)
+      my_string[12..19]
+      
+      # Count from end of string using negative numbers
+      # last 4 characters:
+      last_4 = my_string[-4..-1]
+      
   Number
     abs
     
@@ -214,5 +234,22 @@ Classes
     Math.tan
     Math.log
     Math.sqrt
+    
+  Range
+    # This is a range literal.
+    letters = 'a'..'e'
+    
+    # Convert range to array.
+    letter_ary = letters.to_a
+    
+    # Iterate over range
+    ('A'..'Z').each do |letter|
+      print letter
+    end
+    
+    #min
+    #max
+    #include?
+      letters.include?('b') # true
       
 
