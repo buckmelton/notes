@@ -55,6 +55,12 @@ Basic Syntax
       puts 'Who are you, stranger?'
     end
     
+    if name == 'Buck'
+      puts "Howdy pardner."
+    elsif name == 'Katie'
+      puts 'What a lovely name!'
+    end
+    
     while input != 'bye'
       puts 'Enter:'
       input = gets.chomp
