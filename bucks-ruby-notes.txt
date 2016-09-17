@@ -10,7 +10,22 @@ Outputting for testing, debugging, diagnostics
   puts is next simplest: outputs string to console with a newline, returns nil
   p gives the most info for debugging: it outputs results of call to inspect, and returns the evaluated code
   
+Getting Input from Console
+  puts 'Hello there, what\' your name?'
+  name = gets.chomp
+  puts 'Hello, ' + name + '!'
+  
 Basic Syntax
+
+  Comments
+  
+    # This is a comment
+    # Most people do multiline comments like
+    # this.
+    
+    =begin
+    Multiline comments can be put between =begin and =end, but not many people do this
+    =end
 
   Semicolons
     Not needed (and it's typically considered good style not to use them),
@@ -28,7 +43,81 @@ Basic Syntax
       composer = 'Mozart'
       composer_age = cur_year - composer_yob
       
+  Flow Control
+  
+    if name == 'Buck'
+      puts 'Hello Mr. Melton'
+    end
+    
+    if name == 'Buck'
+      puts 'Hello Mr. Melton'
+    else
+      puts 'Who are you, stranger?'
+    end
+    
+    while input != 'bye'
+      puts 'Enter:'
+      input = gets.chomp
+    end
+    
+    break
+    next # like 'continue' in other languages
+      
+  Methods
+  
+    Definition
+  
+      def method_name (arg1, arg2, arg3) # parens optional
+        # method body here
+      end
+    
+    Calling
+    
+      object.method_name(arg1val, arg2val, arg3 val)
+      
+      Note that arithmetic operators are methods
+        5 + 5 is just a shortcut for 5.+ 5 where "+" is a method on Integer
+        6 * 4 is just a shortcut for 6.* 4 where "*" is a method on Integer
+        
+      
+    
+      
 Data Conversion
 
   Integer to Float: two ways: Float(3); 3.to_f
     I don't know why the 3.to_f works.  to_f is not a method on Integer or any of its ancestors, nor on the module Kernel.
+    
+Classes
+
+  String
+  
+    Methods
+    
+      length
+      reverse
+      
+      upcase
+      downcase
+      swapcase
+      capitalize
+      
+      center(line_width)
+      ljust(line_width)
+      rjust(line_width)
+      
+  Number
+    abs
+    
+  Random
+    rand # just calling rand returns float >= 0 and < 1.
+    rand(int) # returns integer >= 0 and < int.
+    
+  Math
+    Math::PI
+    Math::E
+    Math.cos
+    Math.tan
+    Math.log
+    Math.sqrt
+      
+
