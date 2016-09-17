@@ -68,10 +68,39 @@ Basic Syntax
     
     break
     next # like 'continue' in other languages
+    
+  Data Structures
+  
+    Arrays
+      Create New Array
+        langs = ['English', 'Hawaiian', 'Portuguese']
+        
+      Methods on Array
+        #length
+        #reverse
+        #each
+          langs.each do |lang|
+            puts 'I love ' + lang
+          end
+        
+          Alternatively:
+            langs.each {|lang| puts 'I love ' + lang}
+            
+        #join
+          puts langs.join(' - ') # Yields 'English - Hawaiian - Portuguese'
+          
+        #push
+        # pushes element onto end of array
+        
+        #pop
+        # pops the last elemnet of the array
+        
+        #last
+        # returns the last element of the array, but leaves the array untouched 
       
   Methods
   
-    Definition
+    Defining a Mathod
   
       def method_name (arg1, arg2, arg3) # parens optional
         # method body here
@@ -85,7 +114,15 @@ Basic Syntax
         5 + 5 is just a shortcut for 5.+ 5 where "+" is a method on Integer
         6 * 4 is just a shortcut for 6.* 4 where "*" is a method on Integer
         
-      
+    Iterators
+      #each
+      #times
+        3.times do
+          puts 'Hip Hip Hooray! '
+        end
+        
+        Alternatively:
+          3.times { puts 'Hip Hip Hooray! '}
     
       
 Data Conversion
