@@ -71,9 +71,11 @@ Basic Syntax
     
   Data Structures
   
-    Arrays
+    Array
       Create New Array
         langs = ['English', 'Hawaiian', 'Portuguese']
+        array_2 = [] # create empty array
+        array_2 = Array.new # same, creates empty array
         
       Methods on Array
         #length
@@ -97,6 +99,19 @@ Basic Syntax
         
         #last
         # returns the last element of the array, but leaves the array untouched 
+        
+    Hash
+      Create new hash
+        my_hash = {}  # creates empty hash
+        my_hash = Hash.new  # same, creates empty hash
+        currency_hash = { 'United States': 'dollar',
+                          'Canada': 'dollar',
+                          'Great Britain': 'pound',
+                          'Brazil': 'real'
+                        }
+        
+      Methods on Hash
+        
       
   Methods
   
@@ -154,6 +169,18 @@ Files and Directories
     
   Dir.chdir(new_path) # change directory
   File.rename(new_path_or_name) # rename/move file
+  
+Objects
+
+  Creating a new object
+    Usually use the 'new' method:
+    
+    alpha = Array.new # creates empty array
+    beta = String.new # creates empty string
+    now = Time.new # current date and time
+    
+    We can also create a new Array using an array literal: new_array = ['Buck', 'Ron', 'Gifford']
+    We can also create a new String using a string literal: new_string = 'Buck'
     
 Classes
 
