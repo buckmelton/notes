@@ -190,8 +190,39 @@ Objects
 Classes
 
   Find the class of an object using the 'class' method
-  some_random_object = 'Buck'
-  some_random_object.class # returns 'String'
+    some_random_object = 'Buck'
+    some_random_object.class # returns 'String'
+    
+  Defining a class
+  
+    class Die
+    
+      def initialize
+        roll
+      end
+    
+      def roll
+        @number_showing = 1 + rand(6)
+      end
+      
+      def showing
+        @number_showing
+      end
+      
+    end
+    
+  Change an existing class
+    Just define the class and add/change whatever you want, even including redefining existing methods (but not recommended: make a new method instead).
+    
+    class Integer
+      def to_english
+        if self == 5
+          english = 'five'
+        elsif self == 42
+          english = 'forty-two'
+        end
+      end
+    end
 
   String
   
