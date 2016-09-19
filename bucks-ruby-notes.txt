@@ -226,6 +226,9 @@ Classes
 
   String
   
+    Convertint a String to an Array
+      the_ary = the_str.split("")
+  
     Methods
     
       length
