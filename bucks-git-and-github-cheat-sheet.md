@@ -56,9 +56,9 @@ Commit messages should be specific and read like commands, e.g.:
 
 - First, make sure you have the latest and greatest remote master branch updates merged your feature branch (the master branch may have changed since you started your work on your feature branch, and it is your responsibility to make sure your changes are compatible with however the master branch has changed in the interim before you foist your feature branch changes onto remote master):
 
-git checkout master  // move into master branch
-git pull origin master  // pull remote master branch into local master branch
-git checkout awesome-feature-branch  // move into feature branch
+git checkout master  // move into master branch  
+git pull origin master  // pull remote master branch into local master branch  
+git checkout awesome-feature-branch  // move into feature branch  
 git merge master  // merge any master changes into feature branch
 
 - Then push a copy of your local feature branch to your remote repo:
@@ -67,19 +67,19 @@ git push origin awesome-feature-branch
 
 - Then create a pull request and merge remote feature branch into remote master
 
-On GitHub, click on green "Compare & pull request" button next to feature branch.
-On next page, click on green "Create Pull Request" button.
-On next page, click on green "Merge Pull Request" button.
-On next page, click on green "Confirm Merge" button.
+On GitHub, click on green "Compare & pull request" button next to feature branch.  
+On next page, click on green "Create Pull Request" button.  
+On next page, click on green "Merge Pull Request" button.  
+On next page, click on green "Confirm Merge" button.  
 Click on white "Delete Branch" button.
 
 - Pull remote master down to local master
 
-git checkout master  // move into master branch
-git pull origin master  // pull remote master into local master - this will include all the changes that you merged remotely on GitHub
-                                                // from the feature branch into the master branch.  Note that with this workflow, you never merged from feature to
-                                                // master locally, it was done remotely on GitHub.  I assume that is because that is how to guarantee that a code
-                                                // review can be done by collaborating engineers.
+git checkout master  // move into master branch  
+git pull origin master  // pull remote master into local master - this will include all the changes that you merged remotely on GitHub  
+                        // from the feature branch into the master branch.  Note that with this workflow, you never merged from feature to  
+                        // master locally, it was done remotely on GitHub.  I assume that is because that is how to guarantee that a code  
+                        // review can be done by collaborating engineers.
 
 - Clean up.  You already deleted the remote feature branch above (although you could wait until now).  Now delete the local feature branch using the '-d' option of 'branch'
 
