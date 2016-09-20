@@ -104,6 +104,7 @@ Basic Syntax
       Create new hash
         my_hash = {}  # creates empty hash
         my_hash = Hash.new  # same, creates empty hash
+        my_hash = Hash.new('month') # same, with default value of 'month' if the key or value doesn't exist
         currencies_hash = { 'United States': 'dollar',
                           'Canada': 'dollar',
                           'Great Britain': 'pound',
