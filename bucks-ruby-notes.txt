@@ -111,31 +111,17 @@ Basic Syntax
                             'Canada' => 'dollar',
                             'Great Britain => 'pound'
                           }
+                          
         currencies_hash['United States']  # evaluates to 'dollar'
         
         # Keys are symbols
-        currencies_hash = { 'United States': 'dollar',
-                            'Canada': 'dollar',
-                            'Great Britain': 'pound'
-                          }
-        currencies_hash[:'United States']  # evalutes to 'dollar'
+        my_info = { first_name: 'Buck',
+                    last_name: 'Melton',
+                  }
+                  
+        my_info[:first_name]  # evalutes to 'Buck'
         
-        number_grades = { A: 90,
-                          B: 80,
-                          C: 70
-                        }
-        number_grades[:A] # evaluates to 90
-                        
-      Accessing hash
-        # Key is string
-        currencies_hash['United States'] # evaluates to 'dollar'
-        
-        # Key is symbol
-        currencies_hash[:'United States'] # evaluates to 'dollar'
-        
-      Using symbols
-        my_hash
-        
+    
       Methods on Hash
       
         #each
