@@ -105,11 +105,36 @@ Basic Syntax
         my_hash = {}  # creates empty hash
         my_hash = Hash.new  # same, creates empty hash
         my_hash = Hash.new('month') # same, with default value of 'month' if the key or value doesn't exist
+        
+        # Keys are strings
+        currencies_hash = { 'United States' => 'dollar',
+                            'Canada' => 'dollar',
+                            'Great Britain => 'pound'
+                          }
+        currencies_hash['United States']  # evaluates to 'dollar'
+        
+        # Keys are symbols
         currencies_hash = { 'United States': 'dollar',
-                          'Canada': 'dollar',
-                          'Great Britain': 'pound',
-                          'Brazil': 'real'
+                            'Canada': 'dollar',
+                            'Great Britain': 'pound'
+                          }
+        currencies_hash[:'United States']  # evalutes to 'dollar'
+        
+        number_grades = { A: 90,
+                          B: 80,
+                          C: 70
                         }
+        number_grades[:A] # evaluates to 90
+                        
+      Accessing hash
+        # Key is string
+        currencies_hash['United States'] # evaluates to 'dollar'
+        
+        # Key is symbol
+        currencies_hash[:'United States'] # evaluates to 'dollar'
+        
+      Using symbols
+        my_hash
         
       Methods on Hash
       
