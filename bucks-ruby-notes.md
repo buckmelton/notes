@@ -1,9 +1,9 @@
 # Buck's Ruby Notes
 
 ## Environment
-  ### Interpreters
-    irb is the standard console interpreter
-    pry is an alternative that does nice formatting and color-coding of Ruby objects
+### Interpreters
+irb is the standard console interpreter
+pry is an alternative that does nice formatting and color-coding of Ruby objects
 
 ## Outputting for testing, debugging, diagnostics
   print is simplest: outputs string to console, returns nil
