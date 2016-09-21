@@ -165,7 +165,7 @@ object.method_name(arg1val, arg2val, arg3 val)
           arr[2] is just a shortcut for arr.[] 2
 
 #### Return values
-      Methods return the last expression evaluated in the method (which can be an explicity 'return', but doesn't have to be).
+Methods return the last expression evaluated in the method (which can be an explicity 'return', but doesn't have to be).
 
 ## Iterators
       #each
