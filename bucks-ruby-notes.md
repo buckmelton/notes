@@ -336,7 +336,13 @@ sort    # sort the Enumerable
 sort!   # sort the Enumerable in-place
 ```
 
-##### Methods That Take Blocks
+##### Easy Methods That Take A Block
+```ruby
+each    # |item| perform block of code on each item
+each_with_index     # |item, index| perform block of code on each item with index
+```
+
+##### Methods That Take A Block as Filter and/or Aggregator
 ```ruby
 inject  # Combine elements using some binary operation
 [5..10].inject(0) {|product, num| product * num} #=> Multiply them all: 151200
