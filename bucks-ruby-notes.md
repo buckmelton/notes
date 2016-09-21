@@ -85,6 +85,9 @@ until coder.top_ranked?     # no 'do' needed.  equivalent to 'while not'
     coder.practice
 end
 
+# Same as above
+coder.practice until coder.top_ranked?
+
 break
 next    # like 'continue' in other languages
 ```
