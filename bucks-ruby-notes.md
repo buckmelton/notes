@@ -88,6 +88,17 @@ end
 # Same as above
 coder.practice until coder.top_ranked?
 
+case grade
+when "A"
+  puts 'Well done!'
+when "B"
+  puts 'Try harder!'
+when "C"
+  puts 'You need help!!!'
+else
+  puts "You just making it up!"
+end
+
 break
 next    # like 'continue' in other languages
 ```
