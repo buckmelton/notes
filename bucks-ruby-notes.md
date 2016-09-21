@@ -360,6 +360,19 @@ detect  # return the first one that satisfies the block
 reject  # remove all elements that pass the test
 [1, 10, 20, 15, 25].reject {|x| x < 16 }    #=> [20, 25]
 
+group_by    # put into separate hashes based on value computed
+my_hash = {1 => 'a', 2 => 'b', 3 => 'c', 4 => 'd', 5 => 'e', 6 => 'f'}
+
+my_hash.group_by {|key, value| key.even?}
+#=> {false=>[[1, "a"], [3, "c"], [5, "e"]], true=>[[2, "b"], [4, "d"], [6, "f"]]}
+
+my_hash.group_by {|key, value| key.even? ? "I'm Even Steven" : "I'm Super Odd"}
+#=> {"I'm Super Odd"=>[[1, "a"], [3, "c"], [5, "e"]], "I'm Even Steven"=>[[2, "b"], [4, "d"], [6, "f"]]}
+
+(2..12).group_by {|x| x % 3}
+#=> {2=>[2, 5, 8, 11], 0=>[3, 6, 9, 12], 1=>[4, 7, 10]}
+
+
 # Check for validity of objects within collection
 
 any?    # Do any of the elements pass the test?
