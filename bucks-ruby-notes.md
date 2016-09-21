@@ -194,6 +194,22 @@ my_info[:first_name]  # evalutes to 'Buck'
 currencies_hash.each do |country, currency|
   puts "The currency of #{country} is the #{currency}"
 end
+
+# Adding to a Hash
+my_hash[new_key] = new_value
+my_hash.store(new_key, new_value)
+
+# Selecting from a Hash
+my_hash.select {|key, value| value > 100}
+my_hash.reject {|key, value| key.odd? }
+my_hash.drop_while {|key, value| value < 0}
+
+# Deleting from a Hash
+my_hash.delete(some_key)
+my_hash.delete_if {|key, value| key.even?}
+my_hash.keep_if {|key, value| value > 100}
+
+
 ```
 
 ### Methods
