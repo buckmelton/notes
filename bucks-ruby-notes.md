@@ -143,7 +143,10 @@ puts langs.join(' - ') # Yields 'English - Hawaiian - Portuguese'
 push    # pushes element onto end of array
 pop     # pops the last elemnet of the array
 
+first   # returns the first element of the array, leaving array untouched
 last    # returns the last element of the array, but leaves the array untouched
+take(n) # returns first n elements of array
+drop(n) # returns all but first n elements of array
 ```
 
 #### Hash
