@@ -71,6 +71,11 @@ elsif name == 'Katie'
   puts 'What a lovely name!'
 end
 
+loop do
+    # something
+    break if <test is true>
+end
+
 while input != 'bye'
   puts 'Enter:'
   input = gets.chomp
