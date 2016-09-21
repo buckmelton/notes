@@ -1,14 +1,14 @@
 # Buck's Ruby Notes
 
 ## Environment
-  ### Interpreters
-    irb is the standard console interpreter
-    pry is an alternative that does nice formatting and color-coding of Ruby objects
+### Interpreters
+- irb is the standard console interpreter  
+- pry is an alternative that does nice formatting and color-coding of Ruby objects
 
 ## Outputting for testing, debugging, diagnostics
-  print is simplest: outputs string to console, returns nil
-  puts is next simplest: outputs string to console with a newline, returns nil
-  p gives the most info for debugging: it outputs results of call to inspect, and returns the evaluated code
+- print is simplest: outputs string to console, returns nil  
+- puts is next simplest: outputs string to console with a newline, returns nil  
+- p gives the most info for debugging: it outputs results of call to inspect, and returns the evaluated code
 
 ## Getting Input from Console
 ```ruby
@@ -18,6 +18,9 @@ puts 'Hello, ' + name + '!'
 ```
 
 ## Basic Syntax
+
+### Nil not Null
+It's nil in Ruby, not null.
 
 ### Comments
 
