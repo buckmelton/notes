@@ -76,9 +76,13 @@ loop do
     break if <test is true>
 end
 
-while input != 'bye'
+while input != 'bye'    # no 'do' needed
   puts 'Enter:'
   input = gets.chomp
+end
+
+until coder.top_ranked?     # no 'do' needed.  equivalent to 'while not'
+    coder.practice
 end
 
 break
