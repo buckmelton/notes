@@ -277,6 +277,9 @@ inject  # Combine elements using some binary operation
 detect  # return the first one that satisfies the block
 [1,3,4,7,8].detect {|x| x.even?|}   #=> 4
 [1,3,4,7,8].detect(&:even?) #=> 4. Exactly the same as above, with shortcut notation
+
+reject  # remove all elements that pass the test
+[1, 10, 20, 15, 25].reject {|x| x < 16 }    #=> [20, 25]
 ```
 
 
