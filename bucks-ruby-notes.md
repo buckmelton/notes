@@ -354,6 +354,10 @@ Methods
 ```
 
 #### Range
+
+.. in inclusive
+... excludes the high number
+
 ```ruby
     # This is a range literal.
     letters = 'a'..'e'
