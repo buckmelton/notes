@@ -39,10 +39,10 @@ Multiline comments can be put between =begin and =end, but not many people do th
     unless two statements are on the same line, then they need to be separated by a semicolon
 
 ### Quotes
-    Single quotes and double quotes are the same except:
-    - Double quotes must be used if you're doing string interpolation: "Hello #{world_name}"
-    - Double quotes must be used when escaping characters: 'a\nb' evaluates to string a\nb; "a\nb" evaluates to a, newline, b
-      - Except that you can use single quotes to escape single quotes: 'you\'re'
+Single quotes and double quotes are the same except:
+- Double quotes must be used if you're doing string interpolation: "Hello #{world_name}"
+- Double quotes must be used when escaping characters: 'a\nb' evaluates to string a\nb; "a\nb" evaluates to a, newline, b
+  - Except that you can use single quotes to escape single quotes: 'you\'re'
 
 ### Variables
 
