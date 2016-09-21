@@ -147,6 +147,9 @@ first   # returns the first element of the array, leaving array untouched
 last    # returns the last element of the array, but leaves the array untouched
 take(n) # returns first n elements of array
 drop(n) # returns all but first n elements of array
+
+insert(n, a, b, c)  # insert a, b, c after element n
+unshift(a, b, c)    # insert a, b, c at beginning of array
 ```
 
 #### Hash
