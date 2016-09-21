@@ -91,27 +91,26 @@ array_2 = Array.new # same, creates empty array
 
 ##### Methods on Array
 ```ruby
-#length
-#reverse
-#each
+keep_if # return array of just the elements passing test
+[0..7].keep_if {|x| x.even?}    #=> [0,2,4,6]
+
+length
+reverse
+each
 langs.each do |lang|
   puts 'I love ' + lang
 end
 
-#  Alternatively:
+# Alternatively:
 langs.each {|lang| puts 'I love ' + lang}
 
-#join
+join
 puts langs.join(' - ') # Yields 'English - Hawaiian - Portuguese'
 
-#push
-# pushes element onto end of array
+push    # pushes element onto end of array
+pop     # pops the last elemnet of the array
 
-#pop
-# pops the last elemnet of the array
-
-#last
-# returns the last element of the array, but leaves the array untouched
+last    # returns the last element of the array, but leaves the array untouched
 ```
 
 #### Hash
