@@ -217,7 +217,7 @@ end
     We can also create a new Array using an array literal: new_array = ['Buck', 'Ron', 'Gifford']
     We can also create a new String using a string literal: new_string = 'Buck'
 
-## Classes
+## Classes/Modules
 
   Find the class of an object using the 'class' method
     some_random_object = 'Buck'
@@ -242,8 +242,8 @@ class Die
 end
 ```
 
-  Change an existing class
-    Just define the class and add/change whatever you want, even including redefining existing methods (but not recommended: make a new method instead).
+Change an existing class  
+Just define the class and add/change whatever you want, even including redefining existing methods (but not recommended: make a new method instead).
 
 ```ruby
     class Integer
@@ -256,13 +256,21 @@ end
       end
     end
 ```
+#### Enumerable
 
-  String
+Included in Array, Hash
 
-    Converting a String to an Array
-      `the_ary = the_str.split("")``
+```ruby
+max # return max of Enumerable
+```
 
-    Methods
+
+#### String
+
+Converting a String to an Array
+`the_ary = the_str.split("")``
+
+Methods
 ```ruby
       length
       reverse
@@ -287,16 +295,15 @@ end
       # last 4 characters:
       last_4 = my_string[-4..-1]
 ```
-
-  Number
+#### Number
     `abs`
 
-  Random
+#### Random
 ```ruby
     rand # just calling rand returns float >= 0 and < 1.
     rand(int) # returns integer >= 0 and < int.
 ```
-  Math
+#### Math
 ```ruby
     Math::PI
     Math::E
@@ -306,7 +313,7 @@ end
     Math.sqrt
 ```
 
-  Range
+#### Range
 ```ruby
     # This is a range literal.
     letters = 'a'..'e'
