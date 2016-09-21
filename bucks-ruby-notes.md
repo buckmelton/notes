@@ -260,12 +260,19 @@ Just define the class and add/change whatever you want, even including redefinin
 
 Included in Array, Hash
 
+##### Easy Methods
 ```ruby
 first   # return the first element of the Enumerable
 last    # return the last element of the Enumerable
 max     # return max of Enumerable
 sort    # sort the Enumerable
 sort!   # sort the Enumerable in-place
+```
+
+##### Methods That Take Blocks
+```ruby
+inject  # Combine elements using some binary operation
+[5..10].inject(0) {|product, num| product * num} #=> Multiply them all: 151200
 ```
 
 
