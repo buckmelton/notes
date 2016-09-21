@@ -349,8 +349,9 @@ collect # Same as 'map'
 [1..4].map {|x| x*x}     #=> [1,4,9,16]
 [1..4].collect { "cat" }    #=> ["cat","cat","cat","cat"]
 
-inject  # Combine elements using some binary operation
-[5..10].inject(0) {|product, num| product * num} #=> Multiply them all: 151200
+reduce  # Combine elements using some binary operation
+inject  # Same as (i.e. alias for) 'reduce'
+[5..10].reduce(0) {|product, num| product * num} #=> Multiply them all: 151200
 
 detect  # return the first one that satisfies the block
 [1,3,4,7,8].detect {|x| x.even?|}   #=> 4
@@ -358,6 +359,22 @@ detect  # return the first one that satisfies the block
 
 reject  # remove all elements that pass the test
 [1, 10, 20, 15, 25].reject {|x| x < 16 }    #=> [20, 25]
+
+# Check for validity of objects within collection
+
+any?    # Do any of the elements pass the test?
+[1..5].any? {|x| x > 10}    #=> false
+
+all?    # Do all of the elements pass the test?
+my_hash = {1 => 'a', 2 => 'b', 3 => 'c', 4 => 'd', 5 => 'e', 6 => 'f'}
+my_hash.all? {|key, value| value < 10}    #=> true
+
+none?   # Do none of the elements pass the test?
+[1..5].none? {|x| x > 10|   #=> true
+
+find    # Return the first element that passes the test
+my_hash = {1 => 'a', 2 => 'b', 3 => 'c', 4 => 'd', 5 => 'e', 6 => 'f'}
+my_hash.find {|key, value| x % 3 == 0}  #=> [3, 'c'] (first element divisible by 3)
 ```
 
 
