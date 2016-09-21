@@ -9,4 +9,6 @@ Press Shift-Option as you're using the Volume keys to decrease/increase volume b
 (Solves problem of not being able to get volume low enough before it mutes.)
 
 ## Mission Control / Multiple Desktops
-To see and manage all desktops, swipe up on trackpad with 3 fingers OR just press F3 button
+To see and manage all desktops, swipe up on trackpad with 3 fingers OR just press F3 button.
+
+To move a window to another desktop, go to Mission Control (see above), where you will see all your windows.  Drag the window to the Desktop you want it to be on.
