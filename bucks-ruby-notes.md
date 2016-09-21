@@ -115,6 +115,8 @@ array_2 = Array.new # same, creates empty array
 ##### Methods on Array
 ```ruby
 
+# Indexing into Array
+
 # [a..b]
 my_array[2..5]  #=> returns elements 2 through 5 inclusive
 
@@ -123,6 +125,8 @@ my_array[2...5]     #= returns elements 2 through 5, excluding high element 5
 
 # [a, len]
 my_array[2, 5]  #=> returns 5 elements starting with element 2
+
+# Selecting from an Array
 
 keep_if # return array of just the elements passing test
 [0..7].keep_if {|x| x.even?}    #=> [0,2,4,6]
@@ -140,16 +144,22 @@ langs.each {|lang| puts 'I love ' + lang}
 join
 puts langs.join(' - ') # Yields 'English - Hawaiian - Portuguese'
 
-push    # pushes element onto end of array
-pop     # pops the last elemnet of the array
-
 first   # returns the first element of the array, leaving array untouched
 last    # returns the last element of the array, but leaves the array untouched
 take(n) # returns first n elements of array
 drop(n) # returns all but first n elements of array
 
+# Adding to an Array
+push    # pushes element onto end of array
 insert(n, a, b, c)  # insert a, b, c after element n
 unshift(a, b, c)    # insert a, b, c at beginning of array
+
+# Deleting from an Array
+pop     # pops the last elemnet of the array
+shift    # delete an element from beginning of array
+delete_at(i)    # delete element at index i
+delete(a)   # delete all occurrences of 'a'
+
 ```
 
 #### Hash
