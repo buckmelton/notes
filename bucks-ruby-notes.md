@@ -114,6 +114,16 @@ array_2 = Array.new # same, creates empty array
 
 ##### Methods on Array
 ```ruby
+
+# [a..b]
+my_array[2..5]  #=> returns elements 2 through 5 inclusive
+
+# [a...b]
+my_array[2...5]     #= returns elements 2 through 5, excluding high element 5
+
+# [a, len]
+my_array[2, 5]  #=> returns 5 elements starting with element 2
+
 keep_if # return array of just the elements passing test
 [0..7].keep_if {|x| x.even?}    #=> [0,2,4,6]
 
