@@ -261,7 +261,11 @@ Just define the class and add/change whatever you want, even including redefinin
 Included in Array, Hash
 
 ```ruby
-max # return max of Enumerable
+first   # return the first element of the Enumerable
+last    # return the last element of the Enumerable
+max     # return max of Enumerable
+sort    # sort the Enumerable
+sort!   # sort the Enumerable in-place
 ```
 
 
