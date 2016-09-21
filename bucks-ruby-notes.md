@@ -19,6 +19,9 @@ puts 'Hello, ' + name + '!'
 
 ## Basic Syntax
 
+### Nil not Null
+It's nil in Ruby, not null.
+
 ### Comments
 
 ```ruby
