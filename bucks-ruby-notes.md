@@ -344,6 +344,11 @@ each_with_index     # |item, index| perform block of code on each item with inde
 
 ##### Methods That Take A Block as Filter and/or Aggregator
 ```ruby
+map     # Return array resulting from performing operation on each element
+collect # Same as 'map'
+[1..4].map {|x| x*x}     #=> [1,4,9,16]
+[1..4].collect { "cat" }    #=> ["cat","cat","cat","cat"]
+
 inject  # Combine elements using some binary operation
 [5..10].inject(0) {|product, num| product * num} #=> Multiply them all: 151200
 
