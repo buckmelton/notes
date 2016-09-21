@@ -131,9 +131,6 @@ my_array[2, 5]  #=> returns 5 elements starting with element 2
 [0..5].reject {|x| x.even?} #=> [1,3,5]
 [3,4,2,1,2,3,4].drop_while {|x| x > 1} #=> [1,2,3,4] removes elements until block returns false for first time
 
-keep_if # return array of just the elements passing test
-[0..7].keep_if {|x| x.even?}    #=> [0,2,4,6]
-
 length
 reverse
 each
@@ -162,6 +159,9 @@ pop     # pops the last elemnet of the array
 shift    # delete an element from beginning of array
 delete_at(i)    # delete element at index i
 delete(a)   # delete all occurrences of 'a'
+[0..5].delete_if {|x| x.even?}   #=> [1,3,5]
+keep_if # return array of just the elements passing test
+[0..7].keep_if {|x| x.even?}    #=> [0,2,4,6]
 
 ```
 
