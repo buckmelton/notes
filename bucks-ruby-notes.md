@@ -398,28 +398,36 @@ Converting a String to an Array
 
 Methods
 ```ruby
-      length
-      reverse
+length
+reverse
 
-      upcase
-      downcase
-      swapcase
-      capitalize
+upcase
+downcase
+swapcase
+capitalize
 
-      center(line_width)
-      ljust(line_width)
-      rjust(line_width)
+center(line_width)
+ljust(line_width)
+rjust(line_width)
 
-      # Substrings
-      # The 8 characters starting with the 12th character
-      my_string[12, 8]
+# Substrings
+# The 8 characters starting with the 12th character
+my_string[12, 8]
 
-      # The 12th through the 19th character (same as above, but using a range)
-      my_string[12..19]
+# The 12th through the 19th character (same as above, but using a range)
+my_string[12..19]
 
-      # Count from end of string using negative numbers
-      # last 4 characters:
-      last_4 = my_string[-4..-1]
+# Count from end of string using negative numbers
+# last 4 characters:
+last_4 = my_string[-4..-1]
+
+chomp   # removes separator from end, if present; by default separator is carriage return
+gets.chomp  # gets user input from console and strips the 'return' that they typed at the end
+
+strip   # removes all leading and trailing whitespace characters
+"     hello    ".strip  #=> "hello"
+"\tgoodbye\r\n".strip   #=> "goodbye"
+      
 ```
 #### Number
     `abs`
