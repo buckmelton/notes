@@ -244,7 +244,7 @@ end
 some_method(2, 3, 4)    #=> c == 4
 some_method(2, 3)       #=> c == 1
 ```
-##### Optional Arguments  
+##### Optional/Variable Number Arguments  
 The 'splat' (asterisk) operator stands for 0 or more arguments)
 
 ```ruby
