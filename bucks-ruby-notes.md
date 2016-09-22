@@ -223,14 +223,37 @@ end
 
 #### Calling a Method
 
-object.method_name(arg1val, arg2val, arg3 val)
+`object.method_name(arg1val, arg2val, arg3 val)`
 
-      Note many things we think of as 'operators' are methods
-        Arithmetic operators:
-          5 + 5 is just a shortcut for 5.+ 5 where "+" is a method on Integer
-          6 * 4 is just a shortcut for 6.* 4 where "*" is a method on Integer
-        Array operator:
-          arr[2] is just a shortcut for arr.[] 2
+Note many things we think of as 'operators' are methods
+- Arithmetic operators:
+  - 5 + 5 is just a shortcut for 5.+ 5 where "+" is a method on Integer
+  - 6 * 4 is just a shortcut for 6.* 4 where "*" is a method on Integer
+- Array operator:
+  - arr[2] is just a shortcut for arr.[] 2
+          
+#### Method Arguments
+
+##### Default Argument Values
+
+```ruby
+def some_method(a, b, c=1)
+    # If c isn't passed, it has the value 1
+end
+
+some_method(2, 3, 4)    #=> c == 4
+some_method(2, 3)       #=> c == 1
+```
+##### Optional Arguments  
+The 'splat' (asterisk) operator stands for 0 or more arguments)
+
+```ruby
+def some_method(first_name, *middle_names, last_name)
+    # Do something that might include zero or more middle names
+end
+
+some_method("Buck", "Crosby", "Pukaua", "Toby", "Melton")   # b => ["Crosby", "Pukaua", "Toby"]
+
 
 #### Return values
 Methods return the last expression evaluated in the method (which can be an explicity 'return', but doesn't have to be).
