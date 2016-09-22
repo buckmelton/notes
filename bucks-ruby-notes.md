@@ -253,6 +253,7 @@ def some_method(first_name, *middle_names, last_name)
 end
 
 some_method("Buck", "Crosby", "Pukaua", "Toby", "Melton")   # b => ["Crosby", "Pukaua", "Toby"]
+```
 
 
 #### Return values
