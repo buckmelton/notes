@@ -252,7 +252,7 @@ def some_method(first_name, *middle_names, last_name)
     # Do something that might include zero or more middle names
 end
 
-some_method("Buck", "Crosby", "Pukaua", "Toby", "Melton")   # b => ["Crosby", "Pukaua", "Toby"]
+some_method("Buck", "Crosby", "Pukaua", "Toby", "Melton")   # middle_names => ["Crosby", "Pukaua", "Toby"]
 ```
 
 
