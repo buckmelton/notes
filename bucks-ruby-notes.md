@@ -71,6 +71,10 @@ elsif name == 'Katie'
   puts 'What a lovely name!'
 end
 
+for i in 0..5 [do]
+    # do something
+end
+
 loop do
     # something
     break if <test is true>
