@@ -71,7 +71,7 @@ elsif name == 'Katie'
   puts 'What a lovely name!'
 end
 
-for i in 0..5 [do]
+for i in 0..5       # 'do' is optional
     # do something
 end
 
