@@ -513,3 +513,11 @@ call_block do   # We are passing a block to call_block using do..end
     puts "I am inside call_block method."
 end
 ```
+Passing parameters to a method that also takes a block
+```ruby
+def calculate(a,b)
+    yield(a, b)
+end
+
+puts calculate(15, 10) {|a, b| a - b}   #=> output: 5
+```
