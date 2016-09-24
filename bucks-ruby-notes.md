@@ -578,3 +578,11 @@ puts area_rectangle     #200.0
 puts area_triangle      #100.0    
 ```
 Notice that lambdas can be called using both `.call` and `.()`.
+
+## Closures
+Closure is a function/method that:
+
+- Can be passed around like an object.  
+It can be treated like a variable, which can be assigned to another variable, passed as an argument to a method.
+- Remembers the value of variables no longer in scope.  
+It remembers the values of all the variables that were in scope when the function was defined. It is then able to access those variables when it is called even if they are in a different scope.
