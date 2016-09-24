@@ -497,3 +497,8 @@ end
 #include?
 letters.include?('b') # true
 ```
+
+## Blocks
+
+A *block* is a nameless method that can be passed to another method as a parameter.  
+They can be defined with `do  end` or with curly braces `{  }`.
