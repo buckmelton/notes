@@ -498,7 +498,7 @@ end
 letters.include?('b') # true
 ```
 
-## Blocks
+## Blocks, Procs, and Lambdas
 
 A *block* is a nameless method that can be passed to another method as a parameter.  
 They can be defined with `do  end` or with curly braces `{  }`.
@@ -521,3 +521,31 @@ end
 
 puts calculate(15, 10) {|a, b| a - b}   #=> output: 5
 ```
+
+A proc object is a block of code that can be bound to a set of local variables.  You can think of it as a 'saved block'.
+```ruby
+def foo(a, b, my_proc)
+    my_proc.call(a, b)
+end
+
+add = proc {|x, y| x + y}
+
+puts foo(15, 10, add)   #=> output: 25
+```
+
+Lambdas are anonymous functions.  They are objects of class Proc.  
+```ruby
+#Ruby version <= 1.8
+    lambda { .... } 
+
+    lambda do
+        ....
+    end
+
+#Ruby version >= 1.9, "stabby lambda" syntax is added
+    -> { .... }
+
+    -> do
+        ....
+    end
+Ruby version >= 1.9 can use both lambda and stabby lambda, ->.
