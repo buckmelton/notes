@@ -502,3 +502,14 @@ letters.include?('b') # true
 
 A *block* is a nameless method that can be passed to another method as a parameter.  
 They can be defined with `do  end` or with curly braces `{  }`.
+
+```ruby
+def call_block  # call_block is a normal method
+    puts "Start of method."
+    yield       # use 'yield' to call the block passed in
+    puts "End of method."
+end 
+call_block do   # We are passing a block to call_block using do..end
+    puts "I am inside call_block method."
+end
+```
