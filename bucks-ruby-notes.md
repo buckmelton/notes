@@ -548,4 +548,5 @@ Lambdas are anonymous functions.  They are objects of class Proc.
     -> do
         ....
     end
-Ruby version >= 1.9 can use both lambda and stabby lambda, ->.
+#Ruby version >= 1.9 can use both lambda and stabby lambda, ->.
+```
