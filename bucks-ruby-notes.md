@@ -601,3 +601,43 @@ puts plus_1(y)  # 2
 In this example, the variable x, which is closed within the lambda y, remembers its values. Here, x remembers its value as 1.
 
 Blocks, Procs and Lambdas are closures in Ruby.
+
+## Lazy Evaluation
+Lazy evaluation is an evaluation strategy that delays the assessment of an expression until its value is needed.
+```ruby
+power_array = -> (power, array_size) do 
+    1.upto(Float::INFINITY).lazy.map { |x| x**power }.first(array_size) 
+end
+
+puts power_array.(2 , 4)    #[1, 4, 9, 16]
+puts power_array.(2 , 10)   #[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
+In this example, lazy avoids needless calculations to compute power_array. 
+If we remove lazy from the above code, then it would try to compute all x ranging from 1 to Float::INFINITY. 
+To avoid timeouts and memory allocation exceptions, we use lazy. Now, the code will only compute up to first(array_size).
+
+Another lazy example:  
+Print an array of the first N palindromic prime numbers. 
+For example, the first 10 palindromic prime numbers are [2,3,5,7,11,101,131,151,181,191].
+
+```ruby
+how_many = gets.chomp.to_i
+
+def prime?(x)
+    return false if x <= 1
+    for i in 2..Math.sqrt(x)
+        return false if x % i == 0
+    end
+    return true
+end
+
+def palindrome?(str)
+    return str == str.reverse
+end
+
+palindrome_primes = -> (array_size) do 
+    1.upto(Float::INFINITY).lazy.select {|x| palindrome?(x.to_s) && prime?(x)}.first(array_size) 
+end
+
+p palindrome_primes.(how_many)
+```
