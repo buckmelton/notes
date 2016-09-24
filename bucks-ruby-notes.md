@@ -550,3 +550,31 @@ Lambdas are anonymous functions.  They are objects of class Proc.
     end
 #Ruby version >= 1.9 can use both lambda and stabby lambda, ->.
 ```
+Lambda that takes no arguments
+```ruby
+def area (l, b)
+   -> { l * b } 
+end
+
+x = 10.0; y = 20.0
+
+area_rectangle = area(x, y).call
+area_triangle = 0.5 * area(x, y).()
+
+puts area_rectangle     #200.0
+puts area_triangle      #100.0
+```
+
+Lambda that takes one or more arguments
+```ruby
+area = ->(a, b) { a * b }
+
+x = 10.0; y = 20.0
+
+area_rectangle = area.(x, y)
+area_triangle = 0.5 * area.call(x, y)
+
+puts area_rectangle     #200.0
+puts area_triangle      #100.0    
+```
+Notice that lambdas can be called using both `.call` and `.()`.
