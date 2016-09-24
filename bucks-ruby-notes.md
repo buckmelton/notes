@@ -598,3 +598,6 @@ x = 1
 y = -> { x + 1 }
 puts plus_1(y)  # 2
 ```
+In this example, the variable x, which is closed within the lambda y, remembers its values. Here, x remembers its value as 1.
+
+Blocks, Procs and Lambdas are closures in Ruby.
