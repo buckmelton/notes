@@ -1,5 +1,12 @@
 Buck's Javascript Notes
 
+## Environment
+### Outputting to Console
+```javascript
+console.log('Whatever is here gets written to console with a newline appended.');
+process.stdout.write('Whatever is here gets written to console withOUT a newline appended.');
+```
+
 Data Types
   There are 6 data types in Javascript:
     - Number
