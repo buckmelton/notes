@@ -280,3 +280,11 @@ Functions:
     The last pair of parens tell the interpreter to execute the function immediately. The outermost grouping parens are there to ensure the interpreter treats the whole thing as an expression.
     
     You may see the final pair of parens come after the outer grouping parens, but it's usually considered better practice to put them inside, as above.
+    
+## Classes
+### Strings
+Turn a string into an array: split  
+```javascript
+// Take a string that includes newlines and turn it into an array where each element of the array is one line.  
+var linesArray = inputText.split('\n'); // if inputText is '2\nHacker\nRank' then linesArray is ['2','Hacker','Rank']
+```
