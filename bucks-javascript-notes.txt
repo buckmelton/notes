@@ -288,3 +288,6 @@ Turn a string into an array: split
 // Take a string that includes newlines and turn it into an array where each element of the array is one line.  
 var linesArray = inputText.split('\n'); // if inputText is '2\nHacker\nRank' then linesArray is ['2','Hacker','Rank']
 ```
+Turn a string into an integer: parseInt
+```javascript
+var theInt = parseInt('1234');  // theInt == 1234
