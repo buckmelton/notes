@@ -288,8 +288,8 @@ Functions:
     
     You may see the final pair of parens come after the outer grouping parens, but it's usually considered better practice to put them inside, as above.
     
-## Classes
-### Strings
+## Methods on Data Types
+### String
 Turn a string into an array: split  
 ```javascript
 // Take a string that includes newlines and turn it into an array where each element of the array is one line.  
@@ -298,3 +298,14 @@ var linesArray = inputText.split('\n'); // if inputText is '2\nHacker\nRank' the
 Turn a string into an integer: parseInt
 ```javascript
 var theInt = parseInt('1234');  // theInt == 1234
+
+### Array
+```javascript
+// Create new array: 2 ways
+var theArr = ['Hi','Dee','Ho']; // more common
+var theArr = new Array('Hi','Dee','Ho');  // exactly the same, less common
+
+// Size of array: length
+var arr = [1,2,3];
+var arrSize = arr.length; //=> 3
+```
