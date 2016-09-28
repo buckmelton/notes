@@ -5,6 +5,21 @@
 - irb is the standard console interpreter  
 - pry is an alternative that does nice formatting and color-coding of Ruby objects
 
+### Loading and Requiring files
+`load`  
+When you use `load`, the file is pulled in and immediately executed at the point where it appears.  
+Ruby will look in the current working directory, and then the *load path*  
+To see load path:  
+`puts $: # $: is the global variable holding load path`  
+Since `load` is only executed at the point it's encountered, you can supply variable names to the file being loaded, or you can wrap the `load` in conditionals.  
+`load` always loads the file, regardless of whether it was already loaded or not.
+
+`require`  
+`require` doesn't reload files that have already been loaded.  
+`require` doesn't know about the current working directory, only about the load path, so you may need to do  
+`require "./loadee.rb` to make it explicit.  To add the cwd to load path: `$: << "."` so you can do  
+`require loadee.rb` instead.
+
 ## Outputting for testing, debugging, diagnostics
 - print is simplest: outputs string to console, returns nil  
 - puts is next simplest: outputs string to console with a newline, returns nil  
