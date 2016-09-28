@@ -337,6 +337,22 @@ end
 ```
     We can also create a new Array using an array literal: new_array = ['Buck', 'Ron', 'Gifford']
     We can also create a new String using a string literal: new_string = 'Buck'
+    
+You can create a new custom object, you don't need to use classes (reminds me of Javascript).  It will be of class Object:  
+```ruby
+ticket = Object.new
+
+def ticket.date
+    "02/02/17"
+end
+def ticket.venue
+    "Town Hall"
+end
+def ticket.seat
+    "Balcony, row J, seat 12"
+end
+...
+```
 
 ## Classes/Modules
 
