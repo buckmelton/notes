@@ -421,6 +421,9 @@ my_hash.find {|key, value| x % 3 == 0}  #=> [3, 'c'] (first element divisible by
 
 #### String
 
+Converting a one-character string to its ASCII integer value
+`'a'.ord    #=> 97
+
 Converting a String to an Array
 `the_ary = the_str.split("")``
 
