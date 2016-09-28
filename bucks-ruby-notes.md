@@ -15,6 +15,7 @@ Since `load` is only executed at the point it's encountered, you can supply vari
 `load` always loads the file, regardless of whether it was already loaded or not.
 
 `require`  
+used more than `load`  
 `require` doesn't reload files that have already been loaded.  
 `require` doesn't know about the current working directory, only about the load path, so you may need to do  
 `require "./loadee.rb` to make it explicit.  To add the cwd to load path: `$: << "."` so you can do  
