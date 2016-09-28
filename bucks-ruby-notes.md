@@ -27,6 +27,10 @@ loads features searching relative to the directory in which the file from which 
 without manipulating the load path like you had to do with `require`.  It's a convenient way to navigate a local directory hierarchy e.g.  
 `require_relative "lib/music/sonata"`
 
+### Gems
+Install gem:  
+`$ gem install prawn`
+
 ## Outputting for testing, debugging, diagnostics
 - print is simplest: outputs string to console, returns nil  
 - puts is next simplest: outputs string to console with a newline, returns nil  
