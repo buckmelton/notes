@@ -39,7 +39,7 @@
   - go to localhost, you will get database doesn't exist error
 
 - Shut down server
-  >\>be rake db:create db:migrate
+  >\>be rake db:create db:migrate  
   >\>be rails s
 - Should get generic Rails home page
 - Now try to go to our route
