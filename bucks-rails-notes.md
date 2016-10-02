@@ -67,7 +67,11 @@ E.g. if you leave in coffeescript gem, when you generate controller a coffeescri
     - any helpers you put in here, through inheritance, gets inherited by all controllers.
 
     - good place to put filters e.g. before_action :ensure_logged_in!
-
+    
+#### Rails Console
+Different from ruby console.  
+Rails console allows you to verify the auto-generated ActiveRecord associations and the consequent objects.
+`be rails console`
 
 
 
