@@ -393,6 +393,9 @@ Just define the class and add/change whatever you want, even including redefinin
       end
     end
 ```
+### Self
+It's `self` in Ruby, not `this`.
+
 #### Enumerable
 
 Included in Array, Hash
