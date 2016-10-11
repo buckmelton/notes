@@ -55,8 +55,18 @@
 - Now localhost:3000/info gets 'hello'
 
 ### Gem tips
-From the gemfile, remove gems you arent using, these will be reflected when you generate controllers.
+From the gemfile, remove gems you arent using, these will be reflected when you generate controllers.  
 E.g. if you leave in coffeescript gem, when you generate controller a coffeescript file will be generated.
+
+Three ways to specify gem version in Gemfile:
+- gem 'coffee-rails'  '4.1.0'     # exact
+- gem 'uglifier'      '>= 1.3.0'  # install latest as long as it's >= 1.3.0
+- gem 'coffee-rails'  '-> 4.0.0'  # install latest that's newer than 4.0.0 but not newer than 4.1, i.e. only minor point releases
+
+### If you need to make changes to default application gems
+- Open `Gemfile` with editor
+- Make changes
+- Install new/changed gems by running `bundle install`
 
 ### Asset Pipeline
   - In Sinatra, if you had js or css you would just add another script or link to the erb file
