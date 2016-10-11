@@ -16,6 +16,12 @@ $ git add -A   # Adds all files to the staging area, except those listed in .git
                # The 'rails new' command generates a .gitignore appropriate for a Rails project.
 $ git commit -m "Initialize repository" # Commit the added files.
 ```
+## See a list of your commits and commit messages
+`$ git log`
+
+## Roll back local changes you don't want to commit
+You've made a mistake locally and want to roll back to the last local commit.
+`$ git checkout -f  # -f flag forces overwriting the current changes`
 
 ## Create a new repository on GitHub and clone it to your local computer:
 
