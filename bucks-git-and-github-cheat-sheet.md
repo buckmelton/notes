@@ -24,7 +24,7 @@ You've made a mistake locally and want to roll back to the last local commit.
 `$ git checkout -f  # -f flag forces overwriting the current changes`
 
 ## Add an existing local git repo to Github
-- Create a new repo on Github *WITH NO README, LICENSE, OR .GITIGNORE*
+- Create a new repo on Github **WITH NO README, LICENSE, OR .GITIGNORE**
 - Copy the Github-provided URL
 ```
 $ git remote add origin <URL you copied>
