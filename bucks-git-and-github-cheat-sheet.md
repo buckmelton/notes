@@ -14,6 +14,7 @@ Go to the root directory of the files you want in the repository.
 $ git init
 $ git add -A   # Adds all files to the staging area, except those listed in .gitignore.
                # The 'rails new' command generates a .gitignore appropriate for a Rails project.
+$ git commit -m "Initialize repository" # Commit the added files.
 ```
 
 ## Create a new repository on GitHub and clone it to your local computer:
