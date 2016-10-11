@@ -12,13 +12,28 @@
 ### Install Rails
 `$ gem install rails -v 4.2.2`
 
-### Creating a new app:
+### Create a new app:
   >\>rails new APP_NAME --skip-spring --database=postgres --skip-test-unit
 
   - according to lecturer, spring is more trouble than it's worth
   -  rails uses sqlite by default, but we want postgres
   -  by default the javascript framework is jquery, but you could do e.g. --javascript=react
   - skipping test-unit cuz we're using rspec
+
+### If you need to make changes to default application gems
+- Open `Gemfile` with editor
+- Make changes
+- Install new/changed gems:
+`$ cd <APP_NAME>`
+`$ bundle install`
+
+### Run server
+Rails comes with a command-line program, or *script*, that runs a *local* web server to assist in developing our application.  
+On a local system, just run  
+`rails server`.  
+On cloud-based dev env (e.g. Cloud9), need to supply add'l *IP binding address* and *port number* to tell Rails server the address it can use to make the application visible to the outside world.  Cloud9 uses `$IP` and `$PORT` to assign them dynamically.  
+Make sure you're in the application directory.  
+`$ rails server -b $IP -p $PORT`
 
 ### When an app runs, what happens sequentially is:
 
@@ -62,11 +77,6 @@ Three ways to specify gem version in Gemfile:
 - gem 'coffee-rails'  '4.1.0'     # exact
 - gem 'uglifier'      '>= 1.3.0'  # install latest as long as it's >= 1.3.0
 - gem 'coffee-rails'  '-> 4.0.0'  # install latest that's newer than 4.0.0 but not newer than 4.1, i.e. only minor point releases
-
-### If you need to make changes to default application gems
-- Open `Gemfile` with editor
-- Make changes
-- Install new/changed gems by running `bundle install`
 
 ### Asset Pipeline
   - In Sinatra, if you had js or css you would just add another script or link to the erb file
