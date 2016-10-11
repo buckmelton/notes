@@ -1,15 +1,15 @@
-## Buck's Rails Notes
+# Buck's Rails Notes
 
-### Theory
+## Theory
 - Rails has two guiding principles:
   - Keep your code DRY (Don't Repeat Yourself)
   - Convention Over Configuration
 - Keep re-reading RoR Getting Started guide to strengthen knowledge
 
 
-### Practice
+## Practice
 
-#### Creating a new app:
+### Creating a new app:
   >\>rails new APP_NAME --skip-spring --database=postgres --skip-test-unit
 
   - according to lecturer, spring is more trouble than it's worth
@@ -17,7 +17,7 @@
   -  by default the javascript framework is jquery, but you could do e.g. --javascript=react
   - skipping test-unit cuz we're using rspec
 
-#### When an app runs, what happens sequentially is:
+### When an app runs, what happens sequentially is:
 
 - environment.rb
   - which loads boot.rb
@@ -26,14 +26,14 @@
       - runs one of the environment config files (e.g. development.rb, production.rb, test.rb)
       - then run all the initializers, then the app is up and running
 
-#### Routes:
+### Routes:
   - When a request comes in, it goes to config/routes.rb
   - routes.rb starts with Rails.application.routes.draw do
 
   - get '/info' => 'static#info'
     - Here's the pattern to match on (/info), go to controller and action (controller 'static', action 'info')
 
-#### Naive creation of a Rails app
+### Naive creation of a Rails app
 - If you start server:
   >\>be rails s
   - go to localhost, you will get database doesn't exist error
@@ -51,24 +51,24 @@
 - Make views/static/info.html.erb, put in 'hello'
 - Now localhost:3000/info gets 'hello'
 
-#### Gem tips
+### Gem tips
 From the gemfile, remove gems you arent using, these will be reflected when you generate controllers.
 E.g. if you leave in coffeescript gem, when you generate controller a coffeescript file will be generated.
 
-#### Asset Pipeline
+### Asset Pipeline
   - In Sinatra, if you had js or css you would just add another script or link to the erb file
   - In Rails, you will never add a script or stylesheet at all, you will always have one stylesheet and one js file.
   - The way you add functionality is you add those tools and scripts to your compiled assets, your asset pipeline.
 
   - In development youll see multiple script/link tags, but not in production
 
-#### Controllers
+### Controllers
   - ApplicationController
     - any helpers you put in here, through inheritance, gets inherited by all controllers.
 
     - good place to put filters e.g. before_action :ensure_logged_in!
     
-#### Rails Console
+### Rails Console
 Different from ruby console.  
 Rails console allows you to verify the auto-generated ActiveRecord associations and the consequent objects.
 `be rails console`
