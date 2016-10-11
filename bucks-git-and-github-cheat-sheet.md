@@ -12,7 +12,7 @@ $ git config --global alias.co checkout
 Go to the root directory of the files you want in the repository.
 ```
 $ git init
-$ git add -A   # Adds all files except those listed in .gitignore.
+$ git add -A   # Adds all files to the staging area, except those listed in .gitignore.
                # The 'rails new' command generates a .gitignore appropriate for a Rails project.
 ```
 
