@@ -9,6 +9,9 @@
 
 ## Practice
 
+### Install Rails
+`$ gem install rails -v 4.2.2`
+
 ### Creating a new app:
   >\>rails new APP_NAME --skip-spring --database=postgres --skip-test-unit
 
