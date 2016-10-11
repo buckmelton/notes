@@ -60,6 +60,10 @@ On a local server, go to http://localhost:3000/.
 On Cloud9, go to Share and click on the Application address.  
 You should see the default Rails page.
 
+### Create your first Controller#action and point root route to it
+e.g. in `application_controller.rb` create `def hello` action to render text `hello, world!`  
+then edit `config/routes.rb` to have `root 'application#hello'`
+
 ### Routes:
   - When a request comes in, it goes to config/routes.rb
   - routes.rb starts with Rails.application.routes.draw do
