@@ -28,14 +28,18 @@
 `$ bundle install`
 
 ### Run server
-Rails comes with a command-line program, or *script*, that runs a *local* web server to assist in developing our application.  
+Rails comes with a command-line program, or *script*, that runs a *local* web server to assist in developing our application.
+
 On a local system, just run  
-`rails server`.  
+`rails server`.
+
 On cloud-based dev env (e.g. Cloud9), need to supply add'l *IP binding address* and *port number* to tell Rails server the address it can use to make the application visible to the outside world.  Cloud9 uses `$IP` and `$PORT` to assign them dynamically.  
 Make sure you're in the application directory.  
 `$ rails server -b $IP -p $PORT`
 
-### When an app runs, what happens sequentially is:
+To shut down server: `CTRL-C`
+
+#### When an app runs, what happens sequentially is:
 
 - environment.rb
   - which loads boot.rb
@@ -43,6 +47,18 @@ Make sure you're in the application directory.
     - application file runs and starts to configure the environment
       - runs one of the environment config files (e.g. development.rb, production.rb, test.rb)
       - then run all the initializers, then the app is up and running
+      
+- browser sends request
+- received by a web server
+- which passes the request to the Rails *router* (`config/routes.rb') which figures out which controller
+- and passes the request to a Rails *controller*
+- the *controller* interacts with a *model*
+- the *controller* renders the *view* and returns the complete web page to the browser as HTML
+      
+### View App in Browser
+On a local server, go to http://localhost:3000/.  
+On Cloud9, go to Share and click on the Application address.  
+You should see the default Rails page.
 
 ### Routes:
   - When a request comes in, it goes to config/routes.rb
