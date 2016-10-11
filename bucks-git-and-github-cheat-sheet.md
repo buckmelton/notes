@@ -1,15 +1,15 @@
 # Buck's Git and GitHub Cheat Sheet
 
 ## Git one-time setup on local system
-`$ git config --global user.name "Your Name"`
-`$ git config --global user.email your.email@address.com`
-`$ git config --global push.default matching`
+`$ git config --global user.name "Your Name"`  
+`$ git config --global user.email your.email@address.com`  
+`$ git config --global push.default matching`  
 `$ git config --global alias.co checkout`
 
 ## Create a local repository
 Go to the root directory of the files you want in the repository.
-`$ git init`
-`$ git add -A   # Adds all files except those listed in .gitignore.`
+`$ git init`  
+`$ git add -A   # Adds all files except those listed in .gitignore.`  
                 `# The 'rails new' command generates a .gitignore appropriate for a Rails project.`
 
 ## Create a new repository on GitHub and clone it to your local computer:
