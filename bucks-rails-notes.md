@@ -20,7 +20,7 @@
   -  by default the javascript framework is jquery, but you could do e.g. --javascript=react
   - skipping test-unit cuz we're using rspec
 
-### If you need to make changes to default application gems
+#### If you need to make changes to default application gems
 - Open `Gemfile` with editor
 - Make changes
 - Install new/changed gems:
