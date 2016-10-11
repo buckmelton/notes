@@ -20,7 +20,7 @@ $ git commit -m "Initialize repository" # Commit the added files.
 `$ git log`
 
 ## Roll back local changes you don't want to commit
-You've made a mistake locally and want to roll back to the last local commit.
+You've made a mistake locally and want to roll back to the last local commit.  
 `$ git checkout -f  # -f flag forces overwriting the current changes`
 
 ## Add an existing local git repo to Github
