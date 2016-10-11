@@ -23,6 +23,15 @@ $ git commit -m "Initialize repository" # Commit the added files.
 You've made a mistake locally and want to roll back to the last local commit.
 `$ git checkout -f  # -f flag forces overwriting the current changes`
 
+## Add an existing local git repo to Github
+- Create a new repo on Github *WITH NO README, LICENSE, OR .GITIGNORE*
+- Copy the Github-provided URL
+```
+$ git remote add origin <URL you copied>
+$ git remove -v   # verifies
+$ git push -u origin master
+```
+
 ## Create a new repository on GitHub and clone it to your local computer:
 
 - On GitHub choose "Create New Repository"
