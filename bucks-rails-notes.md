@@ -161,5 +161,12 @@ Different from ruby console.
 Rails console allows you to verify the auto-generated ActiveRecord associations and the consequent objects.
 `be rails console`
 
+### Deploy to Heroku
+```
+$ heroku create
+$ git push heroku master
+$ heroku run rake db:migrate
+```
+
 
 
