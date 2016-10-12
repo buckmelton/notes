@@ -29,6 +29,16 @@ You've made a mistake locally and want to roll back to the last local commit.
 [master]> git merge sub-branch
 ```
 
+# Abandon a branch (e.g. if you've totally screwed it up and just want it to disappear)
+```
+$ git co -b topic-branch
+$ <really screw up branch>
+$ git add -A
+$ git commit -m "Major screw up"
+$ git checkout master
+$ git branch -D topic-branch
+```
+
 ## Add an existing local git repo to Github
 - Create a new repo on Github **WITH NO README, LICENSE, OR .GITIGNORE**
 - Copy the Github-provided URL
