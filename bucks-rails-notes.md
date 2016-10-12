@@ -141,6 +141,14 @@ class Micropost < ActiveRecord::Base
   validates :content, length: { maximum: 140 }
 end
 ```
+Once you create these associations, you can run `rails console` (not irb or pry) to test out the associations, e.g.  
+```
+$ rails console
+>> first_user = User.first
+<...returns listing of first user object...>
+>> first_user.microposts
+<...returns listing of all of first user's microposts...>
+```
 
 ### Controllers
   - ApplicationController
