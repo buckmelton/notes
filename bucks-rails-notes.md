@@ -74,11 +74,11 @@ The quickest easiest way to create an app is to use scaffolding, e.g. to use sca
 > rails generate scaffold Micropost content:text user_id:integer
 > bundle exec rake db:migrate
 ```
-The above commands added resource lines to `config/routes.rb`
+The above commands added resource lines to `config/routes.rb`  
 You can see all the generated routes: `> be rails routes'
 
-Fire up server `rails server -b $IP -p $PORT`
-Visit any of the routes e.g. `localhost:3000/users`
+Fire up server `rails server -b $IP -p $PORT`  
+Visit any of the routes e.g. `localhost:3000/users`  
 You can replace the root route from before (`application#hello`) in routes.rb with `users#index`
 
 ### Routes:
