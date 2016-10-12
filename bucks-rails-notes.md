@@ -129,6 +129,18 @@ class Micropost < ActiveRecord::Base
   validates :content, length: { maximum: 140 }
 end
 ```
+### Associations
+Associations appears in models, e.g. a User `has_many` Microposts:
+```
+class User < ActiveRecord::Base
+  has_many :microposts  # keys off of user_id field in User
+end
+
+class Micropost < ActiveRecord::Base
+  belongs_to :user  # keys off of user_id field in User
+  validates :content, length: { maximum: 140 }
+end
+```
 
 ### Controllers
   - ApplicationController
