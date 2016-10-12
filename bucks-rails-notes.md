@@ -121,6 +121,14 @@ Three ways to specify gem version in Gemfile:
   - The way you add functionality is you add those tools and scripts to your compiled assets, your asset pipeline.
 
   - In development youll see multiple script/link tags, but not in production
+  
+### Validations
+Validations appear in models, e.g. don't allow Microposts longer than 140 characters:
+```
+class Micropost < ActiveRecord::Base
+  validates :content, length: { maximum: 140 }
+end
+```
 
 ### Controllers
   - ApplicationController
