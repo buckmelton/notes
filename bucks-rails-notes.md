@@ -66,7 +66,7 @@ For example:
 - Then edit `config/routes.rb` to have `root 'application#hello'`
 
 ### Scaffolding
-The quickest easiest way to create an app is to use scaffolding, e.g. to create a "Micropost" app (i.e. a Twitter clone) with Users and Microposts:
+The quickest easiest way to create an app is to use scaffolding, e.g. to use scaffolding create a "Micropost" app (i.e. a Twitter clone) with Users and Microposts:
 ```
 > rails generate scaffold User name:string email:string
 > bundle exec rake db:migrate
