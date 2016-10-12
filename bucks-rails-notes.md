@@ -65,6 +65,22 @@ For example:
 - In `application_controller.rb` create `def hello` action to render text `hello, world!`  
 - Then edit `config/routes.rb` to have `root 'application#hello'`
 
+### Scaffolding
+The quickest easiest way to create an app is to use scaffolding, e.g. to create a "Micropost" app (i.e. a Twitter clone) with Users and Microposts:
+```
+> rails generate scaffold User name:string email:string
+> bundle exec rake db:migrate
+
+> rails generate scaffold Micropost content:text user_id:integer
+> bundle exec rake db:migrate
+```
+The above commands added resource lines to `config/routes.rb`
+You can see all the generated routes: `> be rails routes'
+
+Fire up server `rails server -b $IP -p $PORT`
+Visit any of the routes e.g. `localhost:3000/users`
+You can replace the root route from before (`application#hello`) in routes.rb with `users#index`
+
 ### Routes:
   - When a request comes in, it goes to config/routes.rb
   - routes.rb starts with Rails.application.routes.draw do
