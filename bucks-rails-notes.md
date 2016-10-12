@@ -129,6 +129,12 @@ class Micropost < ActiveRecord::Base
   validates :content, length: { maximum: 140 }
 end
 ```
+Common validations:
+```
+validates :<field>, length: { maximum: <number> }
+validates :<field>, presence: true
+```
+
 ### Associations
 Associations appears in models, e.g. a User `has_many` Microposts:
 ```
