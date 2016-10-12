@@ -1,5 +1,7 @@
 # Buck's Rails Notes
 
+Note: as of 10/12/2016, working on adding notes from Hartl: Ruby On Rails Tutorial, 3rd Edition, just finished working through and adding notes from Chapter 2.
+
 ## Theory
 - Rails has two guiding principles:
   - Keep your code DRY (Don't Repeat Yourself)
