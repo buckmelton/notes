@@ -29,7 +29,7 @@ Note: as of 10/12/2016, working on adding notes from Hartl: Ruby On Rails Tutori
 `$ cd <APP_NAME>`
 `$ bundle install`
 
-### Run server
+### Run Rails server
 Rails comes with a command-line program, or *script*, that runs a *local* web server to assist in developing our application.
 
 On a local system, just run  
@@ -56,6 +56,11 @@ To shut down server: `CTRL-C`
 - and passes the request to a Rails *controller*
 - the *controller* interacts with a *model*
 - the *controller* renders the *view* and returns the complete web page to the browser as HTML
+
+### Check database if desired by running db client in console
+`$ sqlite3 <database name from config/database.yml>`
+or
+`$ psql <database name from config/database.yml>`
       
 ### View App in Browser
 On a local server, go to http://localhost:3000/.  
