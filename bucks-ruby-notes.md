@@ -72,6 +72,21 @@ Single quotes and double quotes are the same except:
 
 ### Variables
 
+**Global Variables** start with $  
+`$world_domination = true`
+
+**Instance Variables** start with @  
+`@is_an_instance_variable = true`
+
+**Class Variables** start with @@  
+`@@is_a_class_variable = true`
+
+**Local Variables** start with lower case letter or underscore _  
+`size = 10`
+
+**Constants** start with a capital letter.  The immutability is not enforced (i.e. you can change the value of a constant if you want.)
+`WORLD_DOMINATION_WILL_CONTINUE` = true
+
 #### Assignment
 ```ruby
 composer = 'Mozart'
