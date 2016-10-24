@@ -210,11 +210,84 @@ The Command Pattern can also be used to group a bunch of commands together (usin
 ![Interpreter Pattern](images/interpreter-pattern.png)
 
 - Iterator
+
 #### Observer
 
 The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
+An Observer Pattern consists of a Subject (that is being observed e.g. an Employee or a Spreadsheet) and Observers (e.g. Payroll or TaxMan observe Employee, BarChart and GraphChart observe Spreadsheet).  The Observers register themselves with the Subject.
 
+The Subject contains a list of Observers, and #add_observer, #remove_observer, and #notify_observers methods.
+
+The Observer has an #update method which the Subject calls to notify.
+
+Since anything under the sun might want to be observable, Subject (or Observable) should be a Ruby **module**.
+
+![Observer Pattern](images/observer-pattern.png)
+
+```ruby
+module Subject  # or 'Observable'
+
+  def initialize
+    @observers=[]
+  end
+
+  def add_observer(observer)
+    @observers << observer
+  end
+
+  def delete_observer(observer)
+    @observers.delete(observer)
+  end
+
+  def notify_observers
+    @observers.each do |observer|
+      observer.update(self)
+    end
+  end
+
+end
+
+class Employee
+  include Subject
+
+  attr_reader :name, :address
+  attr_reader :salary
+
+  def initialize( name, title, salary)
+    super()
+    @name = name
+    @title = title
+    @salary = salary
+  end
+
+  def salary=(new_salary)
+    @salary = new_salary
+    notify_observers
+  end
+
+end
+
+fred = Employee.new('Fred', 'Crane Operator', 30000.0)
+payroll = Payroll.new
+fred.add_observer( payroll )
+fred.salary=35000.0 # because #salary= calls notify_observers, Payroll will be notified
+
+tax_man = TaxMan.new
+fred.add_observer(tax_man)
+fred.salary=90000.0 # now Payroll and the Tax Man will be notified.
+```
+
+Ruby actually comes with an Observable module:
+```ruby
+require 'observer'
+
+class Foo
+  include Observable
+  
+  ...
+end
+```
 
 #### Strategy
 
