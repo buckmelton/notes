@@ -58,7 +58,9 @@ Behavioral:
 ### Definitions and Code:
 
 Creational:
+
 #### Abstract Factory
+
 - Builder
 - Factory
 - Singleton
@@ -74,7 +76,9 @@ Behavioral:
 - Interpreter
 - Iterator
 - Observer
+
 #### Strategy
+
 Context - the user of the Strategy (e.g. "Report")  
 Strategy - family of objects that all do the same thing and support the same interface (e.g. superclass Formatter, subclasses HTMLFormatter and PlainTextFormatter, method #output_report)  
 ```ruby
