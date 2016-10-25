@@ -80,6 +80,7 @@ Single quotes and double quotes are the same except:
 
 **Class Variables** start with @@  
 `@@is_a_class_variable = true`
+(see 'Methods' section for info on class-level methods)
 
 **Local Variables** start with lower case letter or underscore _  
 `size = 10`
@@ -263,6 +264,25 @@ my_hash.keep_if {|key, value| value > 100}
 ```ruby
 def method_name (arg1, arg2, arg3) # parens optional
   # method body here
+end
+```
+
+#### Defining a Class-Level Method
+A class-level method is available without having to instantiate an instance of the class.
+There are two syntax options.
+```ruby
+class SomeClass
+    
+    # option 1: use 'self'
+    def self.my_class_level_method
+        ...
+    end
+    
+    # option 2: use name of class
+    def SomeClass.my_class_level_method
+        ...
+    end
+    
 end
 ```
 
