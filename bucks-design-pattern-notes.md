@@ -120,7 +120,7 @@ pond.simulate_one_day
 ```
 
 
-- Builder
+### Builder
 
 ### Factory
 **Creators**: the base and concrete classes that contain the factory methods (e.g. PizzaStore, NYPizzaStore, ChicagoPizzaStore; Pond, DuckPond, FrogPond)
@@ -213,6 +213,76 @@ end
 ## Structural:
 ### Adapter
 ### Composite
+
+Compose objects into tree structures to represent part-whole hierarchies.  Composite lets clients treat individual objects and compositions of object uniformly.
+
+Sometimes we want a complex object to look and act exactly like the components we use to build it.  E.g. 'Tasks', 'Subtasks', and 'Subsubtasks' in baking a cake. Or Graphic, Picture, Line, Text, Rectangle.
+
+Three moving parts:
+- Common interface or base class, called **Component** that will define the interface for all the operations that are shared by leaf and composite objects. "What will my basic and higher-level objects all have in common?"
+- **Leaf** classes: simple, indivisible building blocks.  They will implement **Component** interface.
+- **Composite** class (at least one): also a component, but built from subcomponents
+
+![Composite Pattern](images/composite-pattern.png)
+
+```ruby
+class Task
+  attr_reader :name
+
+  def initialize(name)
+    @name = name
+  end
+
+  def get_time_required
+    0.0
+  end
+end
+
+class AddDryIngredientTaks < Task # or any leaf Task
+
+  def initialize
+    super('Add dry ingredients')
+  end
+
+  def get_time_required
+    1.0 # 1 minute to add flour and sugar
+  end
+
+end
+
+# Additional leaf tasks e.g. MixTask, AddLiquidsTask
+
+class CompositeTask # Any task that comprises multiple other tasks e.g MixBatterTask
+  def initialize(name)
+    super(name)
+    @sub_tasks = []
+  end
+
+  def add_sub_task(task)
+    @sub_tasks << task
+  end
+
+  def remove_sub_task(task)
+    @sub_tasks.delete(task)
+  end
+
+  def get_time_required
+    time = 0.0
+    @sub_tasks.each {|task| time += task.get_time_required}
+  end
+end
+
+class MakeBatterTask < CompositeTask
+  def initialize
+    super('Make batter')
+    add_sub_task( AddDryIngredientTask.new )
+    add_sub_task( AddLiquidsTask.new )
+    add_sub_task( MixTask.new )
+  end
+end
+```
+
+
 ### Decorator
 ### Proxy
 
