@@ -122,6 +122,41 @@ pond.simulate_one_day
 
 ### Builder
 
+Separate the construction of a complex object from its representation so that the same construction process can create different representations.
+
+A builder is sort of like a multipart new method, where objects are created in an extended process instead of all in one shot.
+
+Take all the construction logic and encapsulate it in a class all of its own: the Builder class.
+
+The Builder class contains an instance of the thing it is building.
+
+```ruby
+class ComputerBuilder
+  attr_reader :computer
+
+  def initialize
+    @computer = Computer.new
+  end
+
+  def turbo(has_turbo_cpu=true)
+    @computer.motherboard.cpu = TurboCPU.new
+  end
+
+  #... other ComputerBuilder methods
+end
+
+builder = ComputerBuilder.new
+builder.turbo
+builder.add_cd(true)
+builder.add_dvd
+builder.add_hard_disk(100000)
+
+# Finally, you get the shiny new Computer instance from the builder:
+computer = builder.computer
+```
+
+Olsen, Russ. Design Patterns in Ruby (Adobe Reader) (Addison-Wesley Professional Ruby Series) (p. 253). Pearson Education. Kindle Edition.
+
 ### Factory
 **Creators**: the base and concrete classes that contain the factory methods (e.g. PizzaStore, NYPizzaStore, ChicagoPizzaStore; Pond, DuckPond, FrogPond)
 **Products**: the objects that are being created (Pizza, NYCheesePizza, ChicagoSausagePizza)
@@ -211,7 +246,14 @@ end
 ```
 
 ## Structural:
+
 ### Adapter
+
+Convert the interface of a class into another interface clients expect.
+
+E.g. StringIOAdapter.  You have an Encrypter class that expects a File to encrypt (with operations like #getc and #eof), but instead you want to encrypt a String.  You need to make the String 'look like' a File.  StringIOAdapter implements methods like #getc and #eof and translates them into terms that String understands.
+
+
 ### Composite
 
 Compose objects into tree structures to represent part-whole hierarchies.  Composite lets clients treat individual objects and compositions of object uniformly.
@@ -284,7 +326,18 @@ end
 
 
 ### Decorator
+
+Attach additional responsbilities to an object dynamically.  Decorators provide a flexible alternative to subclassing for extending functionality.
+
+Have a base 'Decorator' class (e.g. WriterDecorator) that gets initialized with the base object and just passes everything through unchanged.  Subclass it to provide additional functionality to the various methods of the base object.  E.g. LineNumberDecorator adds line numbers to the beginning of each line before writing line with SimpleWriter.  TimeStampingWriter add timestamp to beginning of each line before writing line.
+
 ### Proxy
+
+Provide a surrogate or placeholder for another object to control access to it.
+
+Protection Proxies add protection measures to the proxy calls.
+Remote Proxies abstract away the details of accessing an object on a server far away.
+Virtual Proxies delay creating the expensive real object until last possible moment.
 
 ## Behavioral:
 
