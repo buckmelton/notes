@@ -59,7 +59,7 @@ Behavioral:
 
 Creational:
 
-#### Abstract Factory
+### Abstract Factory
 
 An object dedicated to creating a compatible set of objects.  
 The solution is to write a separate class to handle that creation.
@@ -158,7 +158,7 @@ Structural:
 
 Behavioral:
 
-#### Command
+### Command
 Encapsulates a request as an object.
 
 Instead of creating a new Button class for every possible thing a Button could do, and having a separate #on_push method for every subclass (OpenDocumentButton#on_push, NewDocumentButton#on_push), create a subclass of Command and assign it dynamically to Button at runtime.
@@ -200,7 +200,7 @@ The Command Pattern can also be used to group a bunch of commands together (usin
 
 ![Command Pattern Expanded](images/command-pattern-expanded.png)
 
-#### Interpreter
+### Interpreter
 
 - Build an Abstract Syntax Tree (AST)
 - The AST consists of nodes either TerminalExpression (e.g. LiteralExpression) or NonTerminalExpression (e.g. Sequence-, Alternation-, or RepetitionExpression)
@@ -210,13 +210,13 @@ The Command Pattern can also be used to group a bunch of commands together (usin
 
 ![Interpreter Pattern](images/interpreter-pattern.png)
 
-#### Iterator
+### Iterator
 
 An Iterator provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.  In other words, an Iterator provides the outside world with a sort of movable pointer into the objects stored inside an otherwise opaque aggregate object.
 
 ![Iterator Pattern](images/iterator-pattern.png)
 
-#### Observer
+### Observer
 
 The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
@@ -294,7 +294,7 @@ class Foo
 end
 ```
 
-#### Strategy
+### Strategy
 
 Context - the user of the Strategy (e.g. "Report")  
 Strategy - family of objects that all do the same thing and support the same interface (e.g. superclass Formatter, subclasses HTMLFormatter and PlainTextFormatter, method #output_report)  
