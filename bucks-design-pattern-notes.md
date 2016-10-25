@@ -1,6 +1,6 @@
 # Buck's Design Pattern Notes
 
-## 23 original GoF (Gang of Four) patterns:
+## 23 original Design Patterns in GoF (Gang of Four):
 
 Creational:
 - Abstract Factory
@@ -31,9 +31,7 @@ Behavioral:
 - Template Method
 - Visitor
 
-## 14 in Design Patterns in Ruby (Olsen)
-
-### Listing:
+## 14 Design Patterns in *Design Patterns in Ruby* (Olsen)
 
 Creational:
 - Abstract Factory
@@ -55,7 +53,7 @@ Behavioral:
 - Strategy
 - Template Method
 
-### Definitions and Code:
+## Definitions and Code:
 
 Creational:
 
