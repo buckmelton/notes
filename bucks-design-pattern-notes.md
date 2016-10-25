@@ -55,7 +55,7 @@ Behavioral:
 
 ## Definitions and Code:
 
-Creational:
+## Creational:
 
 ### Abstract Factory
 
@@ -146,15 +146,76 @@ chicagoPizzaStore.orderPizza("cheese")
 # This is an example of Duck Typing.  We can call #createPizza on
 # any class that implements #createPizza.
 ```
-- Singleton
+### Singleton
 
-Structural:
-- Adapter
-- Composite
-- Decorator
-- Proxy
+The Singleton Pattern ensures a class has only one instance, and provides a global point of access to it.
 
-Behavioral:
+![Singleton Pattern](images/singleton-pattern.png)
+
+Declare a class variable (e.g. @@instance) to hold our Singleton instance, and then a class method (e.g. self.instance) to return that instance.
+
+But, that's not guaranteed to limit it to one instance.  Anyone could still call MyLogger.new to create a new instance.  To prevent that, make 'new' a private_class_method.  After all, 'new' is a class-level method, right?  If we make it private, nobody outside can call it, only self can call it, which it does in the declaration.
+```ruby
+class MyLogger
+
+  # Singleton-specific stuff:
+
+  @@instance = self.new # or MyLogger.new
+
+  def self.instance # or MyLogger.instance
+    return @@instance
+  end
+
+  private_class_method :new
+
+  # Logging-specific stuff:
+
+  attr_accessor :level
+  ERROR = 1
+  WARNING = 2
+  INFO = 3
+
+  def initialize
+    @log = File.open("log.txt", "w")
+    @level = WARNING
+  end
+
+  def error(msg)
+    @log.puts(msg)
+    @log.flush
+  end
+
+  def warning(msg)
+    @log.puts(msg) if @level >= WARNING
+    @log.flush
+  end
+
+  def info(msg)
+    @log.puts(msg) if @level >= INFO
+    @log.flush
+  end
+
+end
+
+```
+
+Ruby includes a Singleton module to do all this for you.
+```ruby
+require 'singleton'
+
+class MyLogger
+  include Singleton
+
+end
+```
+
+## Structural:
+### Adapter
+### Composite
+### Decorator
+### Proxy
+
+## Behavioral:
 
 ### Command
 Encapsulates a request as an object.
