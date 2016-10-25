@@ -1,6 +1,6 @@
 # Buck's Design Pattern Notes
 
-## 23 original Design Patterns in GoF (Gang of Four):
+## 23 original Design Patterns in GoF (Gang of Four, 1994):
 
 Creational:
 - Abstract Factory
@@ -31,8 +31,8 @@ Behavioral:
 - Template Method
 - Visitor
 
-## 14 Design Patterns in *Design Patterns in Ruby* (Olsen)
-*Design Patterns in Ruby* (Olsen) focuses on the 14 "most widely used and useful" of the original 23 GoF patterns.  These 14 overlap almost completely with the 14 patterns discussed in the second-most-popular Design Pattern book *Head First: Design Patterns* (Freeman and Robson, 2009).  In *Head First: Design Patterns*, the remaining patterns, which they say "aren't used as often", are lumped together in an Appendix called "Leftovers".
+## 14 Design Patterns in *Design Patterns in Ruby* (Olsen, 2008)
+(Note: *Design Patterns in Ruby* (Olsen, 2008) covers the 14 "most widely used and useful" of the original 23 GoF patterns.  These 14 overlap almost exactly with the 14 patterns meriting their own chapters in the second-most-popular Design Pattern book (after GoF) *Head First: Design Patterns* (Freeman and Robson, 2009).  In *Head First: Design Patterns*, the remaining patterns, which they say "aren't used as often", are lumped together in an Appendix called "Leftovers".)
 
 Creational:
 - Abstract Factory
