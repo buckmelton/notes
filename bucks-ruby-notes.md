@@ -80,6 +80,7 @@ Single quotes and double quotes are the same except:
 
 **Class Variables** start with @@  
 `@@is_a_class_variable = true`
+(see 'Methods' section for info on class-level methods)
 
 **Local Variables** start with lower case letter or underscore _  
 `size = 10`
@@ -276,6 +277,29 @@ Note many things we think of as 'operators' are methods
   - 6 * 4 is just a shortcut for 6.* 4 where "*" is a method on Integer
 - Array operator:
   - arr[2] is just a shortcut for arr.[] 2
+  
+#### Defining and Calling a Class-Level Method
+A class-level method is available without having to instantiate an instance of the class.
+There are two syntax options.
+```ruby
+class SomeClass
+    
+    # option 1: use 'self'
+    def self.my_class_level_method
+        ...
+    end
+    
+    # option 2: use name of class
+    def SomeClass.my_class_level_method
+        ...
+    end
+    
+end
+
+# Call it:
+SomeClass.my_class_level_method
+```
+
           
 #### Method Arguments
 
