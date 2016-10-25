@@ -52,7 +52,7 @@ Behavioral:
 - Interpreter
 - Iterator
 - Observer
-- State
+- Strategy
 - Template Method
 
 ### Definitions and Code:
@@ -157,6 +157,7 @@ Structural:
 - Proxy
 
 Behavioral:
+
 #### Command
 Encapsulates a request as an object.
 
@@ -209,7 +210,11 @@ The Command Pattern can also be used to group a bunch of commands together (usin
 
 ![Interpreter Pattern](images/interpreter-pattern.png)
 
-- Iterator
+#### Iterator
+
+An Iterator provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.  In other words, an Iterator provides the outside world with a sort of movable pointer into the objects stored inside an otherwise opaque aggregate object.
+
+![Iterator Pattern](images/iterator-pattern.png)
 
 #### Observer
 
@@ -284,7 +289,7 @@ require 'observer'
 
 class Foo
   include Observable
-  
+
   ...
 end
 ```
