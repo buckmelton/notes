@@ -267,7 +267,18 @@ def method_name (arg1, arg2, arg3) # parens optional
 end
 ```
 
-#### Defining a Class-Level Method
+#### Calling a Method
+
+`object.method_name(arg1val, arg2val, arg3 val)`
+
+Note many things we think of as 'operators' are methods
+- Arithmetic operators:
+  - 5 + 5 is just a shortcut for 5.+ 5 where "+" is a method on Integer
+  - 6 * 4 is just a shortcut for 6.* 4 where "*" is a method on Integer
+- Array operator:
+  - arr[2] is just a shortcut for arr.[] 2
+  
+#### Defining and Calling a Class-Level Method
 A class-level method is available without having to instantiate an instance of the class.
 There are two syntax options.
 ```ruby
@@ -284,18 +295,11 @@ class SomeClass
     end
     
 end
+
+# Call it:
+SomeClass.my_class_level_method
 ```
 
-#### Calling a Method
-
-`object.method_name(arg1val, arg2val, arg3 val)`
-
-Note many things we think of as 'operators' are methods
-- Arithmetic operators:
-  - 5 + 5 is just a shortcut for 5.+ 5 where "+" is a method on Integer
-  - 6 * 4 is just a shortcut for 6.* 4 where "*" is a method on Integer
-- Array operator:
-  - arr[2] is just a shortcut for arr.[] 2
           
 #### Method Arguments
 
