@@ -214,6 +214,34 @@ An Iterator provides a way to access the elements of an aggregate object sequent
 
 ![Iterator Pattern](images/iterator-pattern.png)
 
+Iterators always include #has_next and #next.  Optionally they can include #item (current), #first (sets cursor back to first), and #remove (remove and return the current item).
+
+```ruby
+class ArrayIterator
+
+  def initialize(array)
+    @array = array
+    @index = 0
+  end
+
+  def has_next?
+    @index < @array.length
+  end
+
+  def item
+    @array[@index]
+  end
+
+  def next_item
+    value = @array[@index]
+    @index += 1
+    value
+  end
+
+end
+
+```
+
 ### Observer
 
 The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
