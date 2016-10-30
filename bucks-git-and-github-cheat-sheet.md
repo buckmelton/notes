@@ -44,7 +44,7 @@ $ git branch -D topic-branch
 - Copy the Github-provided URL
 ```
 $ git remote add origin <URL you copied>
-$ git remove -v   # verifies
+$ git remote -v   # verifies
 $ git push -u origin master
 ```
 
