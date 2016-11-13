@@ -1,5 +1,9 @@
 Buck's Javascript Notes
 
+## Conventions
+Filenames: underscores e.g. this-is-my-source-code.js
+Variable names: camel case e.g. var myAwesomeVar = 0;
+
 ## Environment
 ### Outputting to Console
 ```javascript
