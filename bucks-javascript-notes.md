@@ -252,42 +252,45 @@ Conditionals:
 
   }
   
-Functions:
+# Functions
 
-  Named Functions:
-  
+## Named Functions:
+```javascript  
     function area(width, height) {
       return width * height;
     }
     
     var size = area(3,4);
-    
+```
+
     The interpreter always goes through the entire script looking for all variable and function declarations _before_ executing the script line-by-line.  So a function created as a named function can be called in the script _before_ it has been declared.
     
-  Anonymous Functions / Function Expressions:
+## Anonymous Functions / Function Expressions:
   
     If you put a function where the interpreter expects an expression, it's treated as an expression and is known as a _function_expression_. For a function expression, the name is usually omitted. A function with no name is an _anonymous_function_
-    
+```javascript    
     var area = function(width, height) {
       return width * height;
     };
     
     var size = area(3,4);
-    
+```
+
     In a function expression, the function isn't processed until the interpreter gets to that statement.  So you can't call an anonymous function before that interpreter has discovered it.  (This also means that any code that appears up to that point could potentially alter what happens inside this function.)
     
-  IIFE ("Iffy" - Immediately-Invoked Function Expressions)
+## IIFE ("Iffy" - Immediately-Invoked Function Expressions)
   
     Often used to ensure that variable names don't conflict with each other, especially on pages that use more than one script.
     Used for code that only needs to run once in a task, rather than repeatedly called by other parts of the script.
     Any variables declared within the anonymous IIFE function are effectively protected from name collisions.
     
+```javascript
     var area = (function() {
       var width = 3;
       var height = 2;
       return width * height;
     } () );
-    
+```
     The last pair of parens tell the interpreter to execute the function immediately. The outermost grouping parens are there to ensure the interpreter treats the whole thing as an expression.
     
     You may see the final pair of parens come after the outer grouping parens, but it's usually considered better practice to put them inside, as above.
