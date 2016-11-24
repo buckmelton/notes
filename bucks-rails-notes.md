@@ -186,9 +186,9 @@ Very little difference between Web Server and API Server.  Web Server renders so
 
 To help have extra control over changes to API, use a namespace. (If you significantly change what a Web Server renders, humans can adapt quickly/immediately to the changes, but if you signficantly change what an API Server renders, the consuming computers can't adapt.)
 
-Create app as normal e.g.
+Create app as normal with extra options:
 ```
->>rails new <app_name> --skip-spring --database=postgres --skip-test-unit
+>>rails new <app_name> --skip-spring --database=postgres --skip-test-unit --skip-bundle --skip-turbolinks
 ```
 
 routes.rb
