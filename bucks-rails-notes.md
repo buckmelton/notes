@@ -15,7 +15,7 @@ Note: as of 10/12/2016, working on adding notes from Hartl: Ruby On Rails Tutori
 `$ gem install rails -v 4.2.2`
 
 ### Create a new app:
-  >\>rails new APP_NAME --skip-spring --database=postgres --skip-test-unit
+  >\>rails new APP_NAME --skip-spring --database=postgresql --skip-test-unit
 
   - according to lecturer, spring is more trouble than it's worth
   -  rails uses sqlite by default, but we want postgres
@@ -188,7 +188,7 @@ To help have extra control over changes to API, use a namespace. (If you signifi
 
 Create app as normal with extra options:
 ```
->>rails new <app_name> --skip-spring --database=postgres --skip-test-unit --skip-bundle --skip-turbolinks
+>>rails new <app_name> --skip-spring --database=postgresql --skip-test-unit --skip-bundle --skip-turbolinks
 ```
 
 routes.rb
