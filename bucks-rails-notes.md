@@ -184,6 +184,15 @@ $ heroku run rake db:migrate
 ### Rails API
 Very little difference between Web Server and API Server.  Web Server renders something human-consumable e.g. plain text or HTML.  API Server renders something machine-consumable e.g. JSON.
 
-To help keep tighter control over changes, use a namespace. (If you significantly change what a Web Server renders, humans can adapt quickly/immediately to the changes, but if you signficantly change what an API Server renders, the consuming computers can't adapt.)
+To help have extra control over changes to API, use a namespace. (If you significantly change what a Web Server renders, humans can adapt quickly/immediately to the changes, but if you signficantly change what an API Server renders, the consuming computers can't adapt.)
+
+routes.rb
+```ruby
+Routes.Application.routes.draw.do
+  namespace :v1 do
+    resources :properties
+  end
+end
+```
 
 
