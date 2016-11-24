@@ -188,7 +188,7 @@ To help have extra control over changes to API, use a namespace. (If you signifi
 
 Create app as normal e.g.
 ```
->>rails new APP_NAME --skip-spring --database=postgres --skip-test-unit
+>>rails new <app_name> --skip-spring --database=postgres --skip-test-unit
 ```
 
 routes.rb
