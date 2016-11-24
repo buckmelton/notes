@@ -160,7 +160,7 @@ $ rails console
 >> first_user = User.first
 <...returns listing of first user object...>
 >> first_user.microposts
-<...returns listing of all of first user's microposts...>
+<...returns listing of all of first users microposts...>
 ```
 
 ### Controllers
@@ -181,5 +181,9 @@ $ git push heroku master
 $ heroku run rake db:migrate
 ```
 
+### Rails API
+Very little difference between Web Server and API Server.  Web Server renders something human-consumable e.g. plain text or HTML.  API Server renders something machine-consumable e.g. JSON.
+
+To help keep tighter control over changes, use a namespace. (If you significantly change what a Web Server renders, humans can adapt quickly/immediately to the changes, but if you signficantly change what an API Server renders, the consuming computers can't adapt.)
 
 
