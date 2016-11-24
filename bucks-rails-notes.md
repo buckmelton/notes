@@ -197,6 +197,10 @@ Routes.Application.routes.draw.do
   namespace :v1 do
     resources :properties
   end
+  
+  # In future if we make significant changes to API, we can create v2 namespace, and still maintain backward compatibility by keeping v1.
+  # namespace :v2 do
+  # ...
 end
 ```
 
