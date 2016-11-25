@@ -14,6 +14,10 @@ Note: as of 10/12/2016, working on adding notes from Hartl: Ruby On Rails Tutori
 ### Install Rails
 `$ gem install rails -v 4.2.2`
 
+### Environment
+To see everything you can generate:  
+```be rails g```
+
 ### Create a new app:
   >\>rails new APP_NAME --skip-spring --database=postgresql --skip-test-unit
 
