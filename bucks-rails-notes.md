@@ -18,9 +18,9 @@ Note: as of 10/12/2016, working on adding notes from Hartl: Ruby On Rails Tutori
 To see everything you can generate:  
 `be rails g`
 
-To automatically run pry instead of irb, put
-`gem 'pry-rails'`
-into your Gemfile and run
+To automatically run pry instead of irb, put  
+`gem 'pry-rails'`  
+into your Gemfile and run  
 `>>bundle install`
 
 ### Create a new app:
