@@ -20,10 +20,10 @@ $ git commit -m "Initialize repository" # Commit the added files.
 `$ git log`
 
 ## Diff
-See all changes since last commit (that haven't been staged), i.e. diff of current unstaged files and last commit  
+See all changes since last commit (that haven't been staged), i.e. diff of current unstaged files and last commit.  
 `$ git diff`  
 
-See all changes in staged files from last commit  
+See all changes in staged files from last commit.  
 `$ git diff --cached`
 
 ## Roll back local changes you don't want to commit
