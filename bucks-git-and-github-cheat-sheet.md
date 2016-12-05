@@ -98,6 +98,13 @@ git add .
 
 git status
 
+## Unstage files that you've staged but not committed
+`git reset`  
+unstages all staged files
+
+`git reset <filename>`  
+unstages just the specified staged file
+
 ## Commit all staged changes to current branch of local repository:
 
 git commit -m "Good commit message here"
