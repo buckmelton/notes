@@ -62,42 +62,44 @@ if (document.getElementById('header')) {
 }
 ```
 
-    is NOT the same as:
-
-    if (document.getElementById('header') == true) {
+is NOT the same as:
+```javascript
+if (document.getElementById('header') == true) {
       ...
+```
 
-    In the first case, it is truthy and _treated_as_if_ it were truth, and so "Found: do something" is executed.
-    But it is not EQUAL TO true, so in the second case, "Not found: do something" is executed.
+In the first case, it is truthy and _treated_as_if_ it were truth, and so "Found: do something" is executed.  
+But it is not EQUAL TO true, so in the second case, "Not found: do something" is executed.
     
 
-Short Cicuit Values:
+### Short Cicuit Values:
 
-  Logical operators are processed left to right.  They short-circuit (stop) as soon as they have a result - but they return the value that stopped the processing (not necessarily true or false).
+Logical operators are processed left to right.  They short-circuit (stop) as soon as they have a result - but they return the value that stopped the processing (not necessarily true or false).
+```javascript
+var artist = 'Rembrandt';
+var artistA = (artist || 'Unknown');
+```
 
-  var artist = 'Rembrandt';
-  var artistA = (artist || 'Unknown');
+artistA ends up with value 'Rembrandt' because processing stops at truthy 'Rembrandt'
 
-  artistA ends up with value 'Rembrandt' because processing stops at truthy 'Rembrandt'
-
-  Therefore, in logical operations, put the code most likely to return true first in OR operations or the code most likely to return false in AND operations, or the code requiring the most processing power last, just in case another preceding value stops the operation earlier and the processor-intensive operation doesn't need to be run.
+Therefore, in logical operations, put the code most likely to return true first in OR operations or the code most likely to return false in AND operations, or the code requiring the most processing power last, just in case another preceding value stops the operation earlier and the processor-intensive operation doesn't need to be run.
   
-Operators:
+## Operators:
 
-  ++  // increment
-  --  // decrement
+++  // increment  
+--  // decrement
 
 
-Variables:
+## Variables:
 
-  Variables declared without 'var' are considered _global_ variables, so don't accidently forget the 'var' in the declaration or it may very well cause unintended bugs and scope grief.
+Variables declared without 'var' are considered _global_ variables, so don't accidently forget the 'var' in the declaration or it may very well cause unintended bugs and scope grief.
   
-
-Loops:
-
+## Loops:
+```javascript
   for (var i = 0; i < 10; i++) {
     document.write(i);
   }
+```
 
   // Writes a 5 x table to web page.
   var i = 0;
