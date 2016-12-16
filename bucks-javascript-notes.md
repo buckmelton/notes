@@ -108,6 +108,8 @@ elem.innerHTML = x + " " + y;           // Display x and y
 var y = 7; // Initialize y
 ```
 This code displays "5 undefined" because y's declaration is hoisted, but not its initialization to 7.
+
+Best practice is to avoid bringing hoisting into play (which can be the source of bugs) by declaring all your variables at the top.
   
 # Loops:
 ```javascript
