@@ -39,26 +39,28 @@ Falsy:
 - 10/'score' (NaN - Not a Number)
 - var highScore; (a variable with no value assigned to it)
 
-  Almost everything else is truthy:
+Almost everything else is truthy:
 
-  Truthy:
-    true (Boolean true)
-    1 (numbers other than 0)
-    'carrot' (strings with content)
-    10/5 (number calculations)
-    'true' (true written as a string)
-    '0' (zero written as a string)
-    'false' (false written as a string)
-    The presence of an object or an array
+Truthy:
+- true (Boolean true)
+- 1 (numbers other than 0)
+- 'carrot' (strings with content)
+- 10/5 (number calculations)
+- 'true' (true written as a string)
+- '0' (zero written as a string)
+- 'false' (false written as a string)
+- The presence of an object or an array
 
-  Truthy values can also be treated as the number 1.
+Truthy values can also be treated as the number 1.
 
-  IMPORTANT NOTE:
-    if (document.getElementById('header')) {
-      // Found: do something
-    } else {
-      // Not found: do something else
-    }
+IMPORTANT NOTE:
+```javascript
+if (document.getElementById('header')) {
+  // Found: do something
+} else {
+  // Not found: do something else
+}
+```
 
     is NOT the same as:
 
