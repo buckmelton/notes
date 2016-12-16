@@ -100,24 +100,26 @@ Variables declared without 'var' are considered _global_ variables, so don't acc
     document.write(i);
   }
 ```
+```javascript
+// Writes a 5 x table to web page.
+var i = 0;
+var msg = '';
+while (i < 10) {
+msg += i + ' x 5 = ' + (i * 5) + '<br />';
+i++;
+}
+document.getElementById('answer').innerHTML = msg;
+```
+```javascript
+var i = 0;
+do {
+// do stuff
+i++;
+} while (i < 10)
+```
 
-  // Writes a 5 x table to web page.
-  var i = 0;
-  var msg = '';
-  while (i < 10) {
-    msg += i + ' x 5 = ' + (i * 5) + '<br />';
-    i++;
-  }
-  document.getElementById('answer').innerHTML = msg;
-
-  var i = 0;
-  do {
-    // do stuff
-    i++;
-  } while (i < 10)
-
-  break; // leave the loop
-  continue; // skip the rest of this iteration, go to next iteration of loop
+break; // leave the loop  
+continue; // skip the rest of this iteration, go to next iteration of loop
 
 
 Objects:
