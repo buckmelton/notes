@@ -110,6 +110,8 @@ var y = 7; // Initialize y
 This code displays "5 undefined" because y's declaration is hoisted, but not its initialization to 7.
 
 Best practice is to avoid bringing hoisting into play (which can be the source of bugs) by declaring all your variables at the top.
+
+`"use strict"` at the top forces variables to be declared before they are used.
   
 # Loops:
 ```javascript
