@@ -93,6 +93,21 @@ Therefore, in logical operations, put the code most likely to return true first 
 # Variables:
 
 Variables declared without 'var' are considered _global_ variables, so don't accidently forget the 'var' in the declaration or it may very well cause unintended bugs and scope grief.
+
+## Hoisting
+Variables can be used before they are declared. _Hoisting_ means that javascript moves any declarations to the top.
+
+Note that hoisting is only for declarations, not for initializations:
+
+```javascript
+var x = 5; // Initialize x
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x + " " + y;           // Display x and y
+
+var y = 7; // Initialize y
+```
+This code displays "5 undefined" because y's declaration is hoisted, but not its initialization to 7.
   
 # Loops:
 ```javascript
