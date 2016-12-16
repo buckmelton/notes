@@ -1,17 +1,17 @@
 Buck's Javascript Notes
 
-## Conventions
+# Conventions
 Filenames: dashes e.g. this-is-my-source-code.js
 Variable names: camel case e.g. var myAwesomeVar = 0;
 
-## Environment
-### Outputting to Console
+# Environment
+## Outputting to Console
 ```javascript
 console.log('Whatever is here gets written to console with a newline appended.');
 process.stdout.write('Whatever is here gets written to console withOUT a newline appended.');
 ```
 
-## Data Types
+# Data Types
 There are 6 data types in Javascript:
     - Number
       NaN (Not a Number) is a special kind of Number
@@ -22,14 +22,14 @@ There are 6 data types in Javascript:
     - Object
       Arrays and Functions are of type Object
 
-### Type Coercion and Weak Typing
+## Type Coercion and Weak Typing
 JavaScript has weak typing and can convert data types behind the scenes to complete an operation.  
 If you use a data type that JavaScript did not expect, it tries to make sense of the operation rather than report an error.
 
-### === and !==
+## === and !==
 When checking if two values are equal or not equal, because of automatic type conversion it is considered better to use strict equals operators === and !== as those will check that values and data types match, while == and != only check that values match.
 
-### Truthy and Falsy
+## Truthy and Falsy
 Some things are treated _as_if_ they are false or true.
 
 Falsy:
@@ -72,7 +72,7 @@ In the first case, it is truthy and _treated_as_if_ it were truth, and so "Found
 But it is not EQUAL TO true, so in the second case, "Not found: do something" is executed.
     
 
-### Short Cicuit Values:
+## Short Cicuit Values:
 
 Logical operators are processed left to right.  They short-circuit (stop) as soon as they have a result - but they return the value that stopped the processing (not necessarily true or false).
 ```javascript
@@ -84,13 +84,13 @@ artistA ends up with value 'Rembrandt' because processing stops at truthy 'Rembr
 
 Therefore, in logical operations, put the code most likely to return true first in OR operations or the code most likely to return false in AND operations, or the code requiring the most processing power last, just in case another preceding value stops the operation earlier and the processor-intensive operation doesn't need to be run.
   
-## Operators:
+# Operators:
 
 ++  // increment  
 --  // decrement
 
 
-## Variables:
+# Variables:
 
 Variables declared without 'var' are considered _global_ variables, so don't accidently forget the 'var' in the declaration or it may very well cause unintended bugs and scope grief.
   
@@ -227,38 +227,38 @@ var yearWeMet = dayWeMet.getFullYear();
     
 
 Conditionals:
+```javascript
+if (expr) {
 
-  if (expr) {
-  
-  } else {
+} else {
 
-  }
-  
-  if (expr) {
-  
-  } else if {
-  
-  } else {
-  
-  }
+}
 
-  
-  switch (level) {
-    
-    case 'One':
-      title = 'Level 1';
-      break';
+if (expr) {
 
-    case 'Two':
-      title = 'Level 2';
-      break;
+} else if {
 
-    default:
-      title = 'Test';
-      break;
+} else {
 
-  }
-  
+}
+
+
+switch (level) {
+
+case 'One':
+  title = 'Level 1';
+  break';
+
+case 'Two':
+  title = 'Level 2';
+  break;
+
+default:
+  title = 'Test';
+  break;
+
+}
+```
 # Functions
 
 ## Named Functions:
