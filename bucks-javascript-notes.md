@@ -11,8 +11,8 @@ console.log('Whatever is here gets written to console with a newline appended.')
 process.stdout.write('Whatever is here gets written to console withOUT a newline appended.');
 ```
 
-Data Types
-  There are 6 data types in Javascript:
+## Data Types
+There are 6 data types in Javascript:
     - Number
       NaN (Not a Number) is a special kind of Number
     - String
@@ -22,22 +22,22 @@ Data Types
     - Object
       Arrays and Functions are of type Object
 
-Type Coercion and Weak Typing
-  JavaScript has weak typing and can convert data types behind the scenes to complete an operation.
-  If you use a data type that JavaScript did not expect, it tries to make sense of the operation rather than report an error.
+### Type Coercion and Weak Typing
+JavaScript has weak typing and can convert data types behind the scenes to complete an operation.  
+If you use a data type that JavaScript did not expect, it tries to make sense of the operation rather than report an error.
 
-=== and !==
-  When checking if two values are equal or not equal, because of automatic type conversion it is considered better to use strict equals operators === and !== as those will check that values and data types match, while == and != only check that values match.
+### === and !==
+When checking if two values are equal or not equal, because of automatic type conversion it is considered better to use strict equals operators === and !== as those will check that values and data types match, while == and != only check that values match.
 
-Truthy and Falsy
-  Some things are treated _as_if_ they are false or true.
+### Truthy and Falsy
+Some things are treated _as_if_ they are false or true.
 
-  Falsy:
-    false (the traditional Boolean false)
-    0 (the number 0)
-    '' (empty string)
-    10/'score' (NaN - Not a Number)
-    var highScore; (a variable with no value assigned to it)
+Falsy:
+- false (the traditional Boolean false)
+- 0 (the number 0)
+- '' (empty string)
+- 10/'score' (NaN - Not a Number)
+- var highScore; (a variable with no value assigned to it)
 
   Almost everything else is truthy:
 
