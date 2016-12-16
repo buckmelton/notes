@@ -122,80 +122,81 @@ break; // leave the loop
 continue; // skip the rest of this iteration, go to next iteration of loop
 
 
-Objects:
+## Objects:
 
-  Literal Notation:
+### Literal Notation:
+```javascript
+var hotel = {
+  name: 'Quay',
+  rooms: 40,
+  booked: 25,
+  checkAvailability: function() {
+    return this.rooms - this.booked;
+  }
+};
+
+var hotel = {};
+hotel.name = 'Quay';
+hotel.rooms = 40;
+hotel.booked = 25;
+hotel.checkAvailability = function() {
+  return this.rooms - this.booked;
+};
+```
+### Constructor Notation:
+```javascript  
+var hotel = new Object();
+hotel.name = 'Quay';
+hotel.booked = 25;
+hotel.checkAvailability = function() {
+  return this.rooms - this.booked;
+};
+
+function Hotel(name, rooms, booked) {
+  this.name = name;
+  this.rooms = rooms;
+  this.booked = booked;
+  this.checkAvailability = function() {
+    return this.rooms - this.booked;
+  };
+}
+var quayHotel = new Hotel('Quay',40,25);
+var parkHotel = new Hotel('Park',120,77);
+```
+    
+### Adding and Removing (Deleting) Properties:
   
-    var hotel = {
-      name: 'Quay',
-      rooms: 40,
-      booked: 25,
-      checkAvailability: function() {
-        return this.rooms - this.booked;
-      }
-    };
+To add, just presumptively assign:
     
-    var hotel = {};
-    hotel.name = 'Quay';
-    hotel.rooms = 40;
-    hotel.booked = 25;
-    hotel.checkAvailability = function() {
-      return this.rooms - this.booked;
-    };
+hotel.gym = true;
     
-  Constructor Notation:
-  
-    var hotel = new Object();
-    hotel.name = 'Quay';
-    hotel.booked = 25;
-    hotel.checkAvailability = function() {
-      return this.rooms - this.booked;
-    };
-            
-    function Hotel(name, rooms, booked) {
-      this.name = name;
-      this.rooms = rooms;
-      this.booked = booked;
-      this.checkAvailability = function() {
-        return this.rooms - this.booked;
-      };
-    }
-    var quayHotel = new Hotel('Quay',40,25);
-    var parkHotel = new Hotel('Park',120,77);
+To remove (delete) a property:
     
-  Adding and Removing (Deleting) Properties:
-  
-    To add, just presumptively assign:
-    
-    hotel.gym = true;
-    
-    To remove (delete) a property:
-    
-    delete hotel.booked;
+delete hotel.booked;
       
-  Built-In Objects:
-    Three types:
-      * Browser Object Model
-      * Document Object Model (DOM)
-      * Global Javascript Objects
+### Built-In Objects:
+Three types:
+* Browser Object Model
+* Document Object Model (DOM)
+* Global Javascript Objects
     
-    Browser Object Model:
-      Window
-        Document (DOM)
-        History
-        Location
-        Navigator
-        Screen
+#### Browser Object Model:
+Window
+- Document (DOM)
+- History
+- Location
+- Navigator
+- Screen
         
-        Example properties of Window:
-        window.innerHeight, window.innerWidth, window.document, window.history, window.history.length, window.screenX, window.screenY
+Example properties of Window:  
+window.innerHeight, window.innerWidth, window.document, window.history, window.history.length, window.screenX, window.screenY
         
-        Example methods of Window:
-        window.alert(), window.open(), window.print()
+Example methods of Window:  
+window.alert(), window.open(), window.print()
         
-    Document Object Model (DOM)
-      Example properties of window.document:
-        document.title, document.URL, document.lastModified, document.domain
+#### Document Object Model (DOM)
+Example properties of window.document:  
+document.title, document.URL, document.lastModified, document.domain
         
       Example methods of window.document:
         document.write(), document.getElementById(), document.querySelectAll(), document.createElement(), document.createTextNode()
