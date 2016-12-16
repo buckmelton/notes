@@ -94,7 +94,7 @@ Therefore, in logical operations, put the code most likely to return true first 
 
 Variables declared without 'var' are considered _global_ variables, so don't accidently forget the 'var' in the declaration or it may very well cause unintended bugs and scope grief.
   
-## Loops:
+# Loops:
 ```javascript
   for (var i = 0; i < 10; i++) {
     document.write(i);
@@ -122,9 +122,9 @@ break; // leave the loop
 continue; // skip the rest of this iteration, go to next iteration of loop
 
 
-## Objects:
+# Objects:
 
-### Literal Notation:
+## Literal Notation:
 ```javascript
 var hotel = {
   name: 'Quay',
@@ -143,7 +143,7 @@ hotel.checkAvailability = function() {
   return this.rooms - this.booked;
 };
 ```
-### Constructor Notation:
+## Constructor Notation:
 ```javascript  
 var hotel = new Object();
 hotel.name = 'Quay';
@@ -164,7 +164,7 @@ var quayHotel = new Hotel('Quay',40,25);
 var parkHotel = new Hotel('Park',120,77);
 ```
     
-### Adding and Removing (Deleting) Properties:
+## Adding and Removing (Deleting) Properties:
   
 To add, just presumptively assign:
     
@@ -174,13 +174,13 @@ To remove (delete) a property:
     
 delete hotel.booked;
       
-### Built-In Objects:
+## Built-In Objects:
 Three types:
 * Browser Object Model
 * Document Object Model (DOM)
 * Global Javascript Objects
     
-#### Browser Object Model:
+### Browser Object Model:
 Window
 - Document (DOM)
 - History
@@ -194,14 +194,14 @@ window.innerHeight, window.innerWidth, window.document, window.history, window.h
 Example methods of Window:  
 window.alert(), window.open(), window.print()
         
-#### Document Object Model (DOM)
+### Document Object Model (DOM)
 Example properties of window.document:  
 document.title, document.URL, document.lastModified, document.domain
         
 Example methods of window.document:  
 document.write(), document.getElementById(), document.querySelectAll(), document.createElement(), document.createTextNode()
         
-#### Global Objects:
+### Global Objects:
     
 String:  
 example property: length  
@@ -264,11 +264,11 @@ default:
 ## Named Functions:
 
 ```javascript  
-    function area(width, height) {
-      return width * height;
-    }
-    
-    var size = area(3,4);
+function area(width, height) {
+  return width * height;
+}
+
+var size = area(3,4);
 ```
 
 The interpreter always goes through the entire script looking for all variable and function declarations _before_ executing the script line-by-line.  So a function created as a named function can be called in the script _before_ it has been declared.
