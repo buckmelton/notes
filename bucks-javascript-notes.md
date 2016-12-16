@@ -278,11 +278,11 @@ The interpreter always goes through the entire script looking for all variable a
 If you put a function where the interpreter expects an expression, it's treated as an expression and is known as a _function_expression_. For a function expression, the name is usually omitted. A function with no name is an _anonymous_function_
 
 ```javascript    
-    var area = function(width, height) {
-      return width * height;
-    };
-    
-    var size = area(3,4);
+var area = function(width, height) {
+  return width * height;
+};
+
+var size = area(3,4);
 ```
 
 In a function expression, the function isn't processed until the interpreter gets to that statement.  So you can't call an anonymous function before that interpreter has discovered it.  (This also means that any code that appears up to that point could potentially alter what happens inside this function.)
