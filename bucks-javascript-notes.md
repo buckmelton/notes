@@ -198,32 +198,32 @@ window.alert(), window.open(), window.print()
 Example properties of window.document:  
 document.title, document.URL, document.lastModified, document.domain
         
-      Example methods of window.document:
-        document.write(), document.getElementById(), document.querySelectAll(), document.createElement(), document.createTextNode()
+Example methods of window.document:  
+document.write(), document.getElementById(), document.querySelectAll(), document.createElement(), document.createTextNode()
         
-    Global Objects:
+#### Global Objects:
     
-      String:
-        example property: length
-        example methods: toUpperCase(), toLowerCase(), charAt(), indexOf(), substring(), split(), trim(), replace()
+String:  
+example property: length  
+example methods: toUpperCase(), toLowerCase(), charAt(), indexOf(), substring(), split(), trim(), replace()
         
-      Number:
-        example methods: isNaN(), toFixed(), toPrecision, toExponential()
+Number:  
+example methods: isNaN(), toFixed(), toPrecision, toExponential()
         
-      Math:
-        example property: Math.PI
-        example methods: Math.round(), Math.sqrt(), Math.ceil(), Math.floor(), Math.random()
+Math:  
+example property: Math.PI  
+example methods: Math.round(), Math.sqrt(), Math.ceil(), Math.floor(), Math.random()
         
-        create a random number between 1 and 10:
-          var randomNum = Math.floor((Math.random() * 10) + 1);
+create a random number between 1 and 10:  
+var randomNum = Math.floor((Math.random() * 10) + 1);
           
-      Date:
-        example methods: getDate(), setDate(), getDay(), getFullYear(), getHours(), getTime(), getTimezoneOffset(), toDateString(), toTimeString(), toString()
+Date:  
+example methods: getDate(), setDate(), getDay(), getFullYear(), getHours(), getTime(), getTimezoneOffset(), toDateString(), toTimeString(), toString()
 
-        var today = new Date(); // new Date() with no args returns current date & time
-        var dayWeMet = new Date('May 7, 2000 20:00:00');
-        var millisecsSinceMeeting = today - dayWeMet
-        var yearWeMet = dayWeMet.getFullYear();
+var today = new Date(); // new Date() with no args returns current date & time  
+var dayWeMet = new Date('May 7, 2000 20:00:00');  
+var millisecsSinceMeeting = today - dayWeMet;  
+var yearWeMet = dayWeMet.getFullYear();
     
 
 Conditionals:
