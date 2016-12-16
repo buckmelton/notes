@@ -294,11 +294,11 @@ Used for code that only needs to run once in a task, rather than repeatedly call
 Any variables declared within the anonymous IIFE function are effectively protected from name collisions.
     
 ```javascript
-    var area = (function() {
-      var width = 3;
-      var height = 2;
-      return width * height;
-    } () );
+var area = (function() {
+  var width = 3;
+  var height = 2;
+  return width * height;
+} () );
 ```
 The last pair of parens tell the interpreter to execute the function immediately. The outermost grouping parens are there to ensure the interpreter treats the whole thing as an expression.
     
