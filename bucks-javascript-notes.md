@@ -247,7 +247,7 @@ switch (level) {
 
 case 'One':
   title = 'Level 1';
-  break';
+  break;
 
 case 'Two':
   title = 'Level 2';
