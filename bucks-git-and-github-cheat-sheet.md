@@ -80,6 +80,10 @@ git checkout master
 
 git checkout -b awesome-feature-branch
 
+## See which files are currently staged
+
+git status
+
 ## Stage (add) files that you've edited in the current branch
 
 - Before adding (staging) your files prior to a commit, you can double-check the status of files that have had changes to them:
