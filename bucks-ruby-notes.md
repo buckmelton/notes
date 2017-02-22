@@ -37,6 +37,9 @@ Install gem:
 - p gives the most info for debugging: it outputs results of call to inspect, and returns the evaluated code
 
 ## Getting Input from Console
+Two common alternatives:
+String#chomp removes on or more of the passed argument from end of string (carriage return by default).
+String#strip removes leading and trailing whitespace (including carriage returns).
 ```ruby
 puts 'Hello there, what\'s your name?'
 name = gets.chomp
