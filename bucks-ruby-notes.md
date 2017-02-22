@@ -463,6 +463,7 @@ map     # Return array resulting from performing operation on each element
 collect # Same as 'map'
 [1..4].map {|x| x*x}     #=> [1,4,9,16]
 [1..4].collect { "cat" }    #=> ["cat","cat","cat","cat"]
+['1','2','3'].map(&:to_i) #=> [1,2,3]
 
 reduce  # Combine elements using some binary operation
 inject  # Same as (i.e. alias for) 'reduce'
