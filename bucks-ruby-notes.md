@@ -468,6 +468,7 @@ collect # Same as 'map'
 reduce  # Combine elements using some binary operation
 inject  # Same as (i.e. alias for) 'reduce'
 [5..10].reduce(0) {|product, num| product * num} #=> Multiply them all: 151200
+[1,2,3,4,5].reduce(0, :+)   #=> Sum them all: 15
 
 detect  # return the first one that satisfies the block
 [1,3,4,7,8].detect {|x| x.even?|}   #=> 4
