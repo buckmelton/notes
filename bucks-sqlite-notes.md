@@ -1,7 +1,7 @@
 # Buck's Sqlite Notes
 
 ### Enter
-$ sqlite3 <db-name>
+$ sqlite3 '<db-name>'
 
 ### Exit
 >.quit
