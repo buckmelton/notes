@@ -42,8 +42,10 @@ String#chomp removes on or more of the passed argument from end of string (carri
 String#strip removes leading and trailing whitespace (including carriage returns).
 ```ruby
 puts 'Hello there, what\'s your name?'
-name = gets.chomp
+name = gets.chomp   # or, gets.strip to remove leading and trailing whitespace
 puts 'Hello, ' + name + '!'
+
+
 ```
 
 ## Basic Syntax
