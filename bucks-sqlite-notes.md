@@ -10,3 +10,7 @@ $ sqlite3 <db-name>
 ### Show Tables
 >.tables  # show all tables
 >.tables ?TABLES? # show tables matching pattern ?TABLES?
+
+### Show Schemas
+>.schema  # show schema for all tables
+>.schema ?SCHEMA? # show schemas matching ?PATTERN?
