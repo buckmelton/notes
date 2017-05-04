@@ -239,6 +239,8 @@ my_info = { first_name: 'Buck',
 my_info[:first_name]  # evalutes to 'Buck'
 ```
 
+Remember: the only reason you can use dot notation e.g. my_info.first_name is when an attribute accessor METHOD has been created, giving the name of the attribute to a method.  ActiveRecord does this automatically.
+
 ##### Methods on Hash
 ```ruby
 #each
