@@ -36,6 +36,23 @@ You've made a mistake locally and want to roll back to the last local commit.
 [master]> git merge sub-branch
 ```
 
+## Refresh a branch from its parent
+(e.g. when pulling in latest changes from github development branch)
+e.g. assume 'my-feature' branched from 'develop'
+```
+[my-feature]>git status # confirm local feature branch is clean
+[my-feature]>git checkout develop
+[develop]>git pull origin develop # refresh from github remote
+[develop]>git checkout my-feature
+[my-feature]git merge develop
+```
+Git will bring up a vi page asking you to enter a commit message.
+1. press "i" (insert)
+2. write your merge message
+3. press "esc" (exit insertion)
+4. write ":wq" (write and quit)
+5. then press enter
+
 ## Abandon a branch (e.g. if you've totally screwed it up and just want it to disappear)
 ```
 $ git co -b topic-branch
