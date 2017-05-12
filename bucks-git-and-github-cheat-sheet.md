@@ -37,7 +37,7 @@ You've made a mistake locally and want to roll back to the last local commit.
 ```
 
 ## Refresh a branch from its parent
-(e.g. when pulling in latest changes from github development branch)
+(e.g. when pulling in latest changes from github development branch) . 
 e.g. assume 'my-feature' branched from 'develop'
 ```
 [my-feature]>git status # confirm local feature branch is clean
